@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Geist", sans-serif;
+}
+
+::selection {
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 .desktop-nav {
@@ -11,7 +17,7 @@
     left: 0;
     width: 225px;
     height: 100vh;
-    background: #fff;
+    background: #FFFFFF;
     border-right: solid 1px rgb(220, 220, 220);
 }
 
@@ -83,7 +89,7 @@ li a:hover {
 .navbar-toggler {
     height: 36px;
     border-radius: 0;
-    background: #ffffff;
+    background: #FFFFFF;
 }
 
 .navbar-toggler-icon {
@@ -91,7 +97,7 @@ li a:hover {
     display: block;
     width: 20px;
     height: 2px;
-    background: #222;
+    background: #000000;
     background-image: none;
 }
 
@@ -102,7 +108,7 @@ li a:hover {
     left: 0;
     width: 20px;
     height: 2px;
-    background: #222;
+    background: #000000;
 }
 
 .navbar-toggler-icon::before {
@@ -114,7 +120,7 @@ li a:hover {
 }
 
 .navbar-toggler:hover {
-    border-color: #222;
+    border-color: #000000;
 }
 
 .btn-close {
@@ -132,7 +138,7 @@ li a:hover {
     left: 4px;
     width: 20px;
     height: 2px;
-    background: #222;
+    background: #000000;
 }
 
 .btn-close::before {
@@ -160,6 +166,7 @@ main {
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+    margin-bottom: 100px;
 }
 
 .head img {
@@ -273,6 +280,28 @@ main {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
     margin: 0;
+}
+
+.row a p:hover {
+    color: #000000;
+}
+
+.stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.stack-card {
+    border: solid 1px rgb(220, 220, 220);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.stack-card:hover {
+    border: solid 1px #737373;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
