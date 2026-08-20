@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Geist", sans-serif;
+}
+
+.desktop-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100vh;
+    background: #fff;
+    border-right: solid 1px rgb(220, 220, 220);
+}
+
+.desktop-nav ul {
+    list-style-type: none;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 20px;
+    width: 225px;
+    background-color: #FFFFFF;
+    border-right: solid 1px rgb(220, 220, 220);
+}
+
+li a{
+    display: block;
+    color: #737373;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.desktop-nav p,
+.mobile-nav p {
+    padding: 4px 16px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+li a:hover {
+    color: #000000;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-weight: 600;
+}
+
+.contact .email {
+    font-family: "Geist Pixel", sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+
+.desktop-nav .contact {
+    margin-top: auto;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    box-shadow: none;
+    outline: none;
+}
+
+main {
+    min-height: 100vh;
+    margin-left: 226px;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(720px, 100%);
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.head img {
+    height: 80%;
+}
+
+.head h2 {
+    font-family: "Geist Pixel", sans-serif;
+    font-weight: 500;
+}
+
+.text {
+    text-align: justify;
+    font-size: 14px;
+    color: #737373;
+}
+
+.head a {
+    text-decoration: none;
+}
+
+.head a p {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 12px;
+}
+
+.head a p:hover {
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .desktop-nav {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+    main {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        margin-left: 0;
+        padding: 72px 20px 32px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        background-color: #FFFFFF;
+        border-bottom: solid 1px rgb(220, 220, 220);
+        padding: 8px 16px;
+    }
+
+    .desktop-nav {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .mobile-nav .navbar-brand {
+        margin: 0 !important;
+    }
+
+    .mobile-nav .container-fluid {
+        padding: 0;
+    }
+
+    .mobile-nav .offcanvas {
+        width: min(225px, 85vw);
+    }
+}
