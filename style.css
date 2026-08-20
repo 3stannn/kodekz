@@ -215,6 +215,12 @@ main {
     color: #000000;
 }
 
+.project-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
 .card {
     border-top: solid 1px rgb(220, 220, 220);
     border-bottom: solid 1px rgb(220, 220, 220);
