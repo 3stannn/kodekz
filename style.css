@@ -360,4 +360,14 @@ main {
     .mobile-nav .offcanvas {
         width: min(225px, 85vw);
     }
+
+    .github-graph {
+        width: 100%;
+        overflow-x: auto;
+        direction: rtl;
+    }
+
+    .github-graph img {
+        direction: ltr;
+    }
 }
