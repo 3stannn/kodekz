@@ -63,7 +63,8 @@ li a:hover {
     font-weight: 600;
 }
 
-.contact .email {
+.contact .email a {
+    text-decoration: none;
     font-family: "Geist Pixel", sans-serif;
     font-weight: 600;
     color: #000000;
