@@ -14,7 +14,7 @@
 .halftone-bg {
     position: fixed;
     inset: 0;
-    z-index: 0;
+    z-index: -1;
     pointer-events: none;
     background-image: radial-gradient(circle at center, #000000 1px, transparent 1.5px);
     background-size: 14px 14px;
@@ -305,19 +305,9 @@ main {
     margin: 0;
 }
 
-.middle {
+.bottom {
     border: none;
     border-bottom: solid 1px rgb(220, 220, 220);
-    border-radius: 0;
-    padding: 10px 10px;
-    margin: 0;
-}
-
-.bottom {
-    border-top: none;
-    border-bottom: solid 1px rgb(220, 220, 220);
-    border-left: none;
-    border-right: none;
     border-radius: 0;
     padding: 10px 10px;
     margin: 0;
@@ -475,7 +465,6 @@ body.dark-mode {
 }
 
 .dark-mode .card,
-.dark-mode .middle,
 .dark-mode .bottom,
 .dark-mode .stack-card {
     border-color: #333333;
