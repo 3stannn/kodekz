@@ -21,9 +21,18 @@
     opacity: 0.2;
 }
 
+.dark-mode .halftone-bg {
+    background-image: radial-gradient(circle at center, #FFFFFF 1px, transparent 1.5px);
+}
+
 .mask-gradient {
-    -webkit-mask-image: radial-gradient(ellipse at top left, #000 0%, transparent 70%);
-    mask-image: radial-gradient(ellipse at top left, #000 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse at top left, #000000 0%, transparent 70%);
+    mask-image: radial-gradient(ellipse at top left, #000000 0%, transparent 70%);
+}
+
+.dark-mode .mask-gradient {
+    -webkit-mask-image: radial-gradient(ellipse at top left, #FFFFFF 0%, transparent 70%);
+    mask-image: radial-gradient(ellipse at top left, #FFFFFF 0%, transparent 70%);
 }
 
 .desktop-nav {
@@ -386,4 +395,66 @@ main {
     .github-graph img {
         direction: ltr;
     }
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .desktop-nav,
+.dark-mode .desktop-nav ul,
+.dark-mode .mobile-nav,
+.dark-mode .offcanvas,
+.dark-mode .navbar-toggler {
+    background-color: #121212;
+    border-color: #333333;
+}
+
+.dark-mode .desktop-nav p,
+.dark-mode .mobile-nav p,
+.dark-mode .text,
+.dark-mode .head-text,
+.dark-mode li a,
+.dark-mode .tags p,
+.dark-mode .tags a {
+    color: #aaaaaa;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode h2,
+.dark-mode .text-heavy,
+.dark-mode .contact .email a,
+.dark-mode li a:hover,
+.dark-mode .tags a:hover,
+.dark-mode .row a p:hover {
+    color: #ffffff;
+}
+
+.dark-mode .card,
+.dark-mode .middle,
+.dark-mode .bottom,
+.dark-mode .stack-card {
+    border-color: #333333;
+    background-color: #121212;
+}
+
+.dark-mode .card:hover {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .stack-card:hover {
+    border-color: #ffffff;
+}
+
+.dark-mode .navbar-toggler-icon,
+.dark-mode .navbar-toggler-icon::before,
+.dark-mode .navbar-toggler-icon::after,
+.dark-mode .btn-close::before,
+.dark-mode .btn-close::after {
+    background-color: #ffffff;
+}
+
+.dark-mode .github-graph img {
+    filter: invert(1) hue-rotate(180deg);
 }
