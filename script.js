@@ -40,3 +40,5 @@ function themeFunction() {
 }
 
 initTheme();
+document.addEventListener("turbo:load", initTheme);
+document.addEventListener("turbo:render", initTheme);
