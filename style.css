@@ -370,6 +370,21 @@ main {
     padding: 10px 20px;
 }
 
+.stack-container a {
+    text-decoration: none;
+}
+
+.link-card {
+    border: dashed 1px rgb(220, 220, 220);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.link-card:hover {
+    border: dashed 1px #737373;
+}
+
 .stacks-container {
     display: flex;
     flex-wrap: wrap;
@@ -494,7 +509,8 @@ body.dark-mode {
 
 .dark-mode .card,
 .dark-mode .bottom,
-.dark-mode .stack-card {
+.dark-mode .stack-card,
+.dark-mode .link-card {
     border-color: #333333;
     background-color: #121212;
 }
@@ -505,6 +521,10 @@ body.dark-mode {
 
 .dark-mode .stack-card:hover {
     border: solid 1px #737373;
+}
+
+.dark-mode .link-card:hover {
+    border: dashed 1px #737373;
 }
 
 .dark-mode .navbar-toggler-icon,
