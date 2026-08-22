@@ -1,9 +1,21 @@
 const themeStorageKey = "portfolio-theme";
 
+function updateThemeButtons() {
+   const buttons = document.querySelectorAll(".theme-toggle");
+   buttons.forEach(btn => {
+      if (document.body.classList.contains("dark-mode")) {
+         btn.textContent = "light mode";
+      } else {
+         btn.textContent = "dark mode";
+      }
+   });
+}
+
 function initTheme() {
    if (localStorage.getItem(themeStorageKey) === "dark") {
       document.body.classList.add("dark-mode");
    }
+   updateThemeButtons();
 }
 
 function toggleThemeClass() {
@@ -13,6 +25,7 @@ function toggleThemeClass() {
    } else {
       localStorage.removeItem(themeStorageKey);
    }
+   updateThemeButtons();
 }
 
 function themeFunction() {

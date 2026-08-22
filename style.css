@@ -94,6 +94,35 @@ li a:hover {
     color: #000000;
 }
 
+.contact button {
+    border: solid 1px rgb(220, 220, 220);
+    background-color: #FFFFFF;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    font-family: "Geist Pixel", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #737373;
+}
+
+.contact button:hover {
+    border: solid 1px #000000;
+    color: #000000;
+}
+
+.dark-mode .contact button {
+    background-color: #1e1e1e;
+    color: #737373;
+    border: solid 1px #333333;
+    margin-bottom: 10px;
+}
+
+.dark-mode .contact button:hover {
+    color: #FFFFFF;
+    border: solid 1px #737373;
+}
+
 .desktop-nav .contact {
     margin-top: auto;
 }
