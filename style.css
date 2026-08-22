@@ -359,8 +359,16 @@ main {
     padding: 10px 20px;
 }
 
+.stacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
 .stack-card {
     border: solid 1px rgb(220, 220, 220);
+    background-color: #FFFFFF;
     border-radius: 5px;
     text-align: center;
     padding: 5px 10px;
