@@ -7,7 +7,7 @@
 }
 
 ::selection {
-    background-color: #000000;
+    background-color: #121212;
     color: #FFFFFF;
 }
 
@@ -58,7 +58,7 @@
     border-right: solid 1px rgb(220, 220, 220);
 }
 
-li a{
+li a {
     display: block;
     color: #737373;
     padding: 4px 16px;
@@ -262,7 +262,8 @@ main {
     color: #000000;
 }
 
-.tags p, .tags a{
+.tags p,
+.tags a {
     font-family: "Geist Pixel", sans-serif;
     font-size: 14px;
     color: #737373;
@@ -344,6 +345,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    padding: 10px 20px;
 }
 
 .stack-card {
@@ -473,7 +475,7 @@ body.dark-mode {
 }
 
 .dark-mode .stack-card:hover {
-    border-color: #ffffff;
+    border: solid 1px #737373;
 }
 
 .dark-mode .navbar-toggler-icon,
