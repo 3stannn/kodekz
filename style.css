@@ -444,6 +444,7 @@ main {
 .inner-card p {
     text-align: center;
     margin: 0;
+    color: #000000;
 }
 
 .inner-card a {
@@ -513,6 +514,14 @@ main {
 
     .mobile-nav .offcanvas {
         width: min(225px, 85vw);
+    }
+
+    .cert-card {
+        width: 100%;
+    }
+
+    .inner-card {
+        width: 100%;
     }
 
     .github-graph {
