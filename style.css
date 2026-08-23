@@ -421,10 +421,14 @@ main {
     padding: 5px;
     background-color: #FFFFFF;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    will-change: transform;
 }
 
 .cert-card:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.05); 
 }
 
 .inner-cert-card {
