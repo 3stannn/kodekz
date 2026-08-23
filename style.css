@@ -405,6 +405,59 @@ main {
     cursor: pointer;
 }
 
+.cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cert-card {
+    width: 200px;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cert-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.inner-card {
+    width: 190px;
+    height: 140px;
+    border: solid 1px rgb(220, 220, 220);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner-card p {
+    text-align: center;
+    margin: 0;
+}
+
+.inner-card a {
+    text-decoration: none;
+}
+
+.inner-card a p {
+    font-family: "Geist Pixel", sans-serif;
+}
+
+.inner-card a:hover {
+    font-weight: 600;
+}
+
 @media (min-width: 768px) {
     .mobile-nav {
         opacity: 0;
@@ -513,6 +566,19 @@ body.dark-mode {
 .dark-mode .link-card {
     border-color: #333333;
     background-color: #121212;
+}
+
+.dark-mode .cert-card {
+    background-color: #121212;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
+}
+
+.dark-mode .cert-card:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.9) 0px 30px 60px -30px;
+}
+
+.dark-mode .inner-card {
+    border: solid 1px #737373;
 }
 
 .dark-mode .card:hover {
