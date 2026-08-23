@@ -427,7 +427,7 @@ main {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.inner-card {
+.inner-cert-card {
     width: 190px;
     height: 140px;
     border: solid 1px rgb(220, 220, 220);
@@ -441,21 +441,21 @@ main {
     gap: 10px;
 }
 
-.inner-card p {
+.inner-cert-card p {
     text-align: center;
     margin: 0;
     color: #000000;
 }
 
-.inner-card a {
+.inner-cert-card a {
     text-decoration: none;
 }
 
-.inner-card a p {
+.inner-cert-card a p {
     font-family: "Geist Pixel", sans-serif;
 }
 
-.inner-card a:hover {
+.inner-cert-card a:hover {
     font-weight: 600;
 }
 
@@ -520,7 +520,7 @@ main {
         width: 100%;
     }
 
-    .inner-card {
+    .inner-cert-card {
         width: 100%;
     }
 
@@ -586,7 +586,7 @@ body.dark-mode {
     box-shadow: rgba(0, 0, 0, 1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.9) 0px 30px 60px -30px;
 }
 
-.dark-mode .inner-card {
+.dark-mode .inner-cert-card {
     border: solid 1px #333333;
 }
 
