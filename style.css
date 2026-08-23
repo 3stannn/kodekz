@@ -409,11 +409,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .cert-card {
-    width: 220px;
+    width: 225px;
     height: 150px;
     border: none;
     border-radius: 10px;
@@ -432,7 +432,7 @@ main {
 }
 
 .inner-cert-card {
-    width: 210px;
+    width: 215px;
     height: 140px;
     border: solid 1px rgb(220, 220, 220);
     border-radius: 5px;
