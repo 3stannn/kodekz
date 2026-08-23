@@ -413,7 +413,7 @@ main {
 }
 
 .cert-card {
-    width: 200px;
+    width: 220px;
     height: 150px;
     border: none;
     border-radius: 10px;
@@ -428,7 +428,7 @@ main {
 }
 
 .inner-cert-card {
-    width: 190px;
+    width: 210px;
     height: 140px;
     border: solid 1px rgb(220, 220, 220);
     border-radius: 5px;
