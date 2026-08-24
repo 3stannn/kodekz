@@ -39,43 +39,7 @@ function themeFunction() {
    });
 }
 
-const username = '3stannn';
-
-async function fetchContributions() {
-   const countElement = document.getElementById('contribution-count');
-
-   if (!countElement) {
-      return;
-   }
-
-   try {
-      const response = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`);
-
-      if (!response.ok) {
-         throw new Error(`HTTP ${response.status}`);
-      }
-
-      const data = await response.json();
-
-      let totalContributions = data?.total?.lastYear;
-      if (typeof totalContributions !== 'number' && Array.isArray(data?.contributions)) {
-         totalContributions = data.contributions.reduce((sum, day) => sum + (Number(day?.count) || 0), 0);
-      }
-
-      if (typeof totalContributions === 'number') {
-         countElement.textContent = totalContributions.toLocaleString();
-      }
-   } catch (error) {
-      console.error('Error fetching contributions:', error);
-   }
-}
-
-function initPage() {
-   initTheme();
-   fetchContributions();
-}
-
-initPage();
-document.addEventListener("DOMContentLoaded", initPage);
-document.addEventListener("turbo:load", initPage);
-document.addEventListener("turbo:render", initPage);
+initTheme();
+document.addEventListener("DOMContentLoaded", initTheme);
+document.addEventListener("turbo:load", initTheme);
+document.addEventListener("turbo:render", initTheme);
