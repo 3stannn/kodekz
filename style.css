@@ -96,6 +96,89 @@ li a:hover {
     font-weight: 600;
 }
 
+.head-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.button-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #000000;
+    background-color: #000000;
+    margin: 0;
+    padding: 4px 8px;
+    font-family: "Geist Pixel", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #737373;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.button-cv:hover {
+    border: solid 1px #000000;
+    color: #FFFFFF;
+}
+
+.head-link,
+.head-actions a:not(.button-cv) {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 12px;
+    color: #737373;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0;
+    line-height: normal;
+}
+
+.head-link:hover,
+.head-actions a:not(.button-cv):hover {
+    color: #000000;
+}
+
+.head-actions p,
+.head-actions a p {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    white-space: nowrap;
+    line-height: normal;
+}
+
+.dark-mode .button-cv {
+    background-color: #1e1e1e;
+    color: #737373;
+    border: solid 1px #333333;
+    margin: 0;
+}
+
+.dark-mode .button-cv:hover {
+    color: #FFFFFF;
+    border: solid 1px #737373;
+}
+
+.dark-mode .head-link,
+.dark-mode .head-actions a:not(.button-cv),
+.dark-mode .head-actions p,
+.dark-mode .head-actions a p {
+    color: #aaaaaa;
+}
+
+.dark-mode .head-link:hover,
+.dark-mode .head-actions a:not(.button-cv):hover,
+.dark-mode .head-actions a:hover p {
+    color: #ffffff;
+}
+
 .contact .email a {
     text-decoration: none;
     font-family: "Geist Pixel", sans-serif;
