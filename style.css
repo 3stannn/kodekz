@@ -69,7 +69,8 @@ body {
 }
 
 li a {
-    display: block;
+    display: flex;
+    align-items: center;
     color: #737373;
     padding: 4px 16px;
     text-decoration: none;
@@ -410,6 +411,10 @@ main {
     display: block;
     color: inherit;
     text-decoration: none;
+}
+
+iframe {
+    width: 100%;
 }
 
 .card {
