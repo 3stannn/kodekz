@@ -16,7 +16,7 @@ body {
 }
 
 ::selection {
-    background-color: #121212;
+    background-color: #0C0C0F;
     color: #FFFFFF;
 }
 
@@ -707,7 +707,7 @@ iframe {
 }
 
 body.dark-mode {
-    background-color: #121212;
+    background-color: #0C0C0F;
     color: #ffffff;
 }
 
@@ -716,7 +716,7 @@ body.dark-mode {
 .dark-mode .mobile-nav,
 .dark-mode .offcanvas,
 .dark-mode .navbar-toggler {
-    background-color: #121212;
+    background-color: #0C0C0F;
     border-color: #333333;
 }
 
@@ -745,11 +745,11 @@ body.dark-mode {
 .dark-mode .stack-card,
 .dark-mode .link-card {
     border-color: #333333;
-    background-color: #121212;
+    background-color: #0C0C0F;
 }
 
 .dark-mode .cert-card {
-    background-color: #121212;
+    background-color: #0C0C0F;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
 }
 
