@@ -597,47 +597,48 @@ iframe {
 }
 
 .dot {
-    border-radius: 50%;
-    background-color: #000000;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    transition: transform 0.15s ease;
 }
 
 .dot-cell:hover .dot {
-    transform: scale(1.25);
+    transform: scale(1.2);
 }
 
+/* Light mode GitHub Heatmap */
 .dot-level-0 {
-    width: 2px;
-    height: 2px;
-    background-color: #d4d4d8;
+    background-color: #ebedf0;
 }
 
 .dot-level-1 {
-    width: 3.5px;
-    height: 3.5px;
-    opacity: 0.7;
+    background-color: #9be9a8;
 }
 
 .dot-level-2 {
-    width: 5.5px;
-    height: 5.5px;
-    opacity: 0.85;
+    background-color: #40c463;
 }
 
 .dot-level-3 {
-    width: 7.5px;
-    height: 7.5px;
-    opacity: 0.95;
+    background-color: #30a14e;
 }
 
 .dot-level-4 {
-    width: 9.5px;
-    height: 9.5px;
-    opacity: 1;
+    background-color: #216e39;
 }
 
 .github-footer {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #737373;
     margin-top: 14px;
+    text-transform: uppercase;
+}
+
+.github-footer span {
+    font-weight: 600;
+    color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -781,20 +782,26 @@ body.dark-mode {
     background-color: #ffffff;
 }
 
-.dark-mode .dot {
-    background-color: #ffffff;
-}
-
+/* Dark Mode GitHub Heatmap */
 .dark-mode .dot-level-0 {
-    background-color: #222225;
+    background-color: #0C0C0F;
+    border: 1px solid #111111;
 }
 
 .dark-mode .dot-level-1 {
-    opacity: 0.85;
+    background-color: #0e4429;
 }
 
 .dark-mode .dot-level-2 {
-    opacity: 0.95;
+    background-color: #006d32;
+}
+
+.dark-mode .dot-level-3 {
+    background-color: #26a641;
+}
+
+.dark-mode .dot-level-4 {
+    background-color: #39d353;
 }
 
 .dark-mode .github-footer {
