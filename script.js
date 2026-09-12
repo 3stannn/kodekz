@@ -71,3 +71,64 @@ initTheme();
 document.addEventListener("DOMContentLoaded", initTheme);
 document.addEventListener("turbo:load", initTheme);
 document.addEventListener("turbo:render", initTheme);
+
+// GitHub Contributions Activity Loader
+let isFetchingContributions = false;
+
+async function loadGitHubContributions() {
+    const grid = document.getElementById("dotGrid");
+    if (!grid || isFetchingContributions) return;
+
+    if (grid.children.length > 0) {
+        const graphContainer = document.querySelector(".github-graph");
+        if (graphContainer) {
+            graphContainer.scrollLeft = graphContainer.scrollWidth;
+        }
+        return;
+    }
+
+    isFetchingContributions = true;
+    const totalDisplay = document.getElementById("contributionTotal");
+    const graphContainer = document.querySelector(".github-graph");
+
+    try {
+        const USERNAME = "3stannn";
+        const res = await fetch(`https://github-contributions-api.jogruber.de/v4/${USERNAME}?y=last`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+        const data = await res.json();
+
+        if (totalDisplay && data.total && data.total.lastYear !== undefined) {
+            totalDisplay.textContent = Number(data.total.lastYear).toLocaleString();
+        }
+
+        grid.innerHTML = "";
+
+        data.contributions.forEach((day) => {
+            const cell = document.createElement("div");
+            cell.className = "dot-cell";
+            cell.title = `${day.date}: ${day.count} contributions`;
+
+            const dot = document.createElement("div");
+            dot.className = `dot dot-level-${day.level}`;
+
+            cell.appendChild(dot);
+            grid.appendChild(cell);
+        });
+
+        // Scroll to the end on mobile / narrow viewports so latest activity is in view
+        if (graphContainer) {
+            graphContainer.scrollLeft = graphContainer.scrollWidth;
+        }
+    } catch (err) {
+        console.error("Failed to load GitHub activity:", err);
+        if (totalDisplay && totalDisplay.textContent === "...") {
+            totalDisplay.textContent = "500+";
+        }
+    } finally {
+        isFetchingContributions = false;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", loadGitHubContributions);
+document.addEventListener("turbo:load", loadGitHubContributions);

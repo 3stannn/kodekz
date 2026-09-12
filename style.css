@@ -565,6 +565,81 @@ iframe {
     font-weight: 600;
 }
 
+/* GitHub Contribution Graph */
+.github-graph {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0 6px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.github-graph::-webkit-scrollbar {
+    display: none;
+}
+
+.dot-grid {
+    display: grid;
+    grid-template-rows: repeat(7, 10px);
+    grid-auto-flow: column;
+    grid-auto-columns: 10px;
+    gap: 3px;
+    width: max-content;
+}
+
+.dot-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+}
+
+.dot {
+    border-radius: 50%;
+    background-color: #000000;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.dot-cell:hover .dot {
+    transform: scale(1.25);
+}
+
+.dot-level-0 {
+    width: 2px;
+    height: 2px;
+    background-color: #d4d4d8;
+}
+
+.dot-level-1 {
+    width: 3.5px;
+    height: 3.5px;
+    opacity: 0.7;
+}
+
+.dot-level-2 {
+    width: 5.5px;
+    height: 5.5px;
+    opacity: 0.85;
+}
+
+.dot-level-3 {
+    width: 7.5px;
+    height: 7.5px;
+    opacity: 0.95;
+}
+
+.dot-level-4 {
+    width: 9.5px;
+    height: 9.5px;
+    opacity: 1;
+}
+
+.github-footer {
+    margin-top: 14px;
+}
+
 @media (min-width: 768px) {
     .mobile-nav {
         opacity: 0;
@@ -628,16 +703,6 @@ iframe {
 
     .inner-cert-card {
         width: 100%;
-    }
-
-    .github-graph {
-        width: 100%;
-        overflow-x: auto;
-        direction: rtl;
-    }
-
-    .github-graph img {
-        direction: ltr;
     }
 }
 
@@ -716,6 +781,26 @@ body.dark-mode {
     background-color: #ffffff;
 }
 
-.dark-mode .github-graph img {
-    filter: invert(1) hue-rotate(180deg);
+.dark-mode .dot {
+    background-color: #ffffff;
+}
+
+.dark-mode .dot-level-0 {
+    background-color: #222225;
+}
+
+.dark-mode .dot-level-1 {
+    opacity: 0.85;
+}
+
+.dark-mode .dot-level-2 {
+    opacity: 0.95;
+}
+
+.dark-mode .github-footer {
+    color: #aaaaaa;
+}
+
+.dark-mode .github-footer span {
+    color: #ffffff;
 }
