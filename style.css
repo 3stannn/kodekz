@@ -105,6 +105,80 @@ li a:hover {
     font-weight: 600;
 }
 
+.profile-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.head-avatar,
+.profile-head img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.head-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.name-container {
+    display: block;
+}
+
+.name-container h2,
+.profile-head h2 {
+    font-size: 26px;
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.name-first {
+    white-space: nowrap;
+}
+
+.name-last {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.name-container svg {
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.head-sub {
+    font-family: "Geist Pixel", monospace, sans-serif;
+    font-size: 13px;
+    color: #737373;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.04em;
+}
+
+.head-sub span {
+    font-size: 11px;
+    line-height: 1;
+}
+
 .head-actions {
     display: flex;
     align-items: center;
@@ -341,25 +415,11 @@ main {
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 
-.head img {
-    height: 80%;
-}
-
 .head h2 {
     font-size: 24px;
     font-family: "Geist Pixel", sans-serif;
     font-weight: 500;
     margin-bottom: 0;
-}
-
-.name-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.name-container svg:hover {
-    cursor: pointer;
 }
 
 .head-text {
@@ -705,6 +765,37 @@ iframe {
     .inner-cert-card {
         width: 100%;
     }
+
+    .profile-head {
+        gap: 16px;
+    }
+
+    .head-avatar,
+    .profile-head img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .name-container h2,
+    .profile-head h2 {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .name-last {
+        gap: 6px;
+    }
+
+    .name-container svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .head-sub {
+        font-size: 12px;
+    }
 }
 
 body.dark-mode {
@@ -725,6 +816,7 @@ body.dark-mode {
 .dark-mode .mobile-nav p,
 .dark-mode .text,
 .dark-mode .head-text,
+.dark-mode .head-sub,
 .dark-mode li a,
 .dark-mode .tags p,
 .dark-mode .tags a {
