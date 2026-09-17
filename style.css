@@ -147,15 +147,9 @@ li a:hover {
     flex-wrap: wrap;
 }
 
-.name-first {
+.name {
     white-space: nowrap;
-}
-
-.name-last {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
+    font-family: "Geist Pixel", sans-serif;
 }
 
 .name-container svg {
@@ -227,16 +221,6 @@ li a:hover {
     color: #000000;
 }
 
-.head-actions p,
-.head-actions a p {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    white-space: nowrap;
-    line-height: normal;
-}
-
 .dark-mode .button-cv {
     background-color: #1e1e1e;
     color: #737373;
@@ -250,15 +234,12 @@ li a:hover {
 }
 
 .dark-mode .head-link,
-.dark-mode .head-actions a:not(.button-cv),
-.dark-mode .head-actions p,
-.dark-mode .head-actions a p {
+.dark-mode .head-actions a:not(.button-cv) {
     color: #aaaaaa;
 }
 
 .dark-mode .head-link:hover,
-.dark-mode .head-actions a:not(.button-cv):hover,
-.dark-mode .head-actions a:hover p {
+.dark-mode .head-actions a:not(.button-cv):hover {
     color: #ffffff;
 }
 
@@ -307,7 +288,9 @@ li a:hover {
     box-shadow: none !important;
     outline: none !important;
     padding: 0px;
-    background: transparent;
+    height: 36px;
+    border-radius: 0;
+    background: #FFFFFF;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -318,12 +301,6 @@ li a:hover {
 .navbar-toggler:active {
     box-shadow: none;
     outline: none;
-}
-
-.navbar-toggler {
-    height: 36px;
-    border-radius: 0;
-    background: #FFFFFF;
 }
 
 .navbar-toggler-icon {
@@ -396,12 +373,13 @@ main {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .container {
@@ -439,19 +417,6 @@ main {
     font-weight: 600;
 }
 
-.head a {
-    text-decoration: none;
-}
-
-.head a p {
-    font-family: "Geist Pixel", sans-serif;
-    font-size: 12px;
-}
-
-.head a p:hover {
-    color: #000000;
-}
-
 .tags p,
 .tags a {
     font-family: "Geist Pixel", sans-serif;
@@ -473,8 +438,30 @@ main {
     text-decoration: none;
 }
 
-iframe {
-    width: 100%;
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+}
+
+.grid-card {
+    border-top: solid 1px rgb(220, 220, 220);
+    border-right: solid 1px rgb(220, 220, 220);
+    padding: 20px;
+}
+
+.dark-mode .grid-card,
+.dark-mode .grid-card.last {
+    border-color: #333333;
+}
+
+.grid-card h3 {
+    font-family: "Geist Pixel", sans-serif;
+}
+
+.grid-card.last {
+    border: none;
+    border-top: solid 1px rgb(220, 220, 220);
 }
 
 .card {
@@ -483,7 +470,7 @@ iframe {
     border-left: none;
     border-right: none;
     border-radius: 0;
-    padding: 10px 10px;
+    padding: 10px 0px;
     margin: 0;
 }
 
@@ -491,7 +478,7 @@ iframe {
     border: none;
     border-bottom: solid 1px rgb(220, 220, 220);
     border-radius: 0;
-    padding: 10px 10px;
+    padding: 10px 0px;
     margin: 0;
 }
 
@@ -590,7 +577,7 @@ iframe {
 
 .cert-card:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .inner-cert-card {
@@ -688,19 +675,6 @@ iframe {
     background-color: #216e39;
 }
 
-.github-footer {
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    color: #737373;
-    margin-top: 14px;
-    text-transform: uppercase;
-}
-
-.github-footer span {
-    font-weight: 600;
-    color: #000000;
-}
-
 @media (min-width: 768px) {
     .mobile-nav {
         opacity: 0;
@@ -782,10 +756,6 @@ iframe {
         flex-direction: column;
         align-items: flex-start;
         gap: 2px;
-    }
-
-    .name-last {
-        gap: 6px;
     }
 
     .name-container svg {
@@ -894,12 +864,4 @@ body.dark-mode {
 
 .dark-mode .dot-level-4 {
     background-color: #39d353;
-}
-
-.dark-mode .github-footer {
-    color: #aaaaaa;
-}
-
-.dark-mode .github-footer span {
-    color: #ffffff;
 }
