@@ -87,6 +87,23 @@ li a {
     z-index: 1030;
 }
 
+.mobile-nav .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav .offcanvas-body .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    flex: 1;
+}
+
+.mobile-nav .offcanvas-body .contact {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
 .desktop-nav p,
 .mobile-nav p {
     padding: 4px 16px;
@@ -547,6 +564,10 @@ main {
     border-radius: 5px;
     text-align: center;
     padding: 5px 10px;
+}
+
+.stack-card.text {
+    font-size: 14px;
 }
 
 .stack-card:hover {
