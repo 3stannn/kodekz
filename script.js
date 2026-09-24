@@ -9,11 +9,12 @@ function getPreferredTheme() {
 }
 
 function updateThemeButtons() {
-    const isDark = document.documentElement.classList.contains("dark-mode") || 
-                   (document.body && document.body.classList.contains("dark-mode"));
-    const buttons = document.querySelectorAll(".theme-toggle");
-    buttons.forEach(btn => {
-        btn.textContent = isDark ? "light mode" : "dark mode";
+    const isDark = document.documentElement.classList.contains("dark-mode") ||
+        (document.body && document.body.classList.contains("dark-mode"));
+
+    document.querySelectorAll(".theme-toggle").forEach((button) => {
+        button.querySelector(".theme-label").textContent =
+            isDark ? "light mode" : "dark mode";
     });
 }
 
