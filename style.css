@@ -695,6 +695,47 @@ main {
     background-color: #216e39;
 }
 
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 16px 0;
+
+}
+
+/* Continuous Infinite Track */
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: continuousScroll 18s linear infinite;
+    will-change: transform;
+}
+
+.carousel-wrapper:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+@keyframes continuousScroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.carousel-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 12px;
+}
+
+.carousel-group img {
+    height: 250px;
+}
+
 @media (min-width: 768px) {
     .mobile-nav {
         opacity: 0;
@@ -781,6 +822,10 @@ main {
 
     .head-sub {
         font-size: 12px;
+    }
+
+    .carousel-group img {
+        height: 150px;
     }
 }
 
