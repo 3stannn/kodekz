@@ -736,6 +736,64 @@ main {
     height: 250px;
 }
 
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 18px 20px;
+    align-items: stretch;
+}
+
+.service-card {
+    width: 100%;
+    min-height: 180px;
+    border: solid 1px rgb(220, 220, 220);
+    border-radius: 0;
+    text-align: center;
+    padding: 20px 18px 16px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.service-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.05);
+}
+
+.service-card a {
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.service-card a p {
+    font-family: "Geist Pixel", sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+.service-card a:hover {
+    opacity: 0.8;
+}
+
+.service-container .cert-card,
+.service-container .service-card {
+    width: 100%;
+}
+
+.service-container .inner-cert-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 @media (min-width: 768px) {
     .mobile-nav {
         opacity: 0;
@@ -795,6 +853,17 @@ main {
 
     .inner-cert-card {
         width: 100%;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .service-card {
+        min-height: unset;
+        height: auto;
+        padding: 18px 16px;
     }
 
     .profile-head {
@@ -881,8 +950,23 @@ body.dark-mode {
     box-shadow: rgba(0, 0, 0, 1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.9) 0px 30px 60px -30px;
 }
 
+.dark-mode .service-card {
+    background-color: #0C0C0F;
+    border: solid 1px #333333;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
+}
+
+.dark-mode .service-card:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.9) 0px 30px 60px -30px;
+}
+
+.dark-mode .service-card a p {
+    color: #ffffff;
+}
+
 .dark-mode .inner-cert-card {
     border: solid 1px #333333;
+    background-color: #0C0C0F;
 }
 
 .dark-mode .card:hover {
