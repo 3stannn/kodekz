@@ -544,6 +544,7 @@ main {
     border-radius: 5px;
     text-align: center;
     padding: 5px 10px;
+    font-size: 14px;
 }
 
 .link-card:hover {
