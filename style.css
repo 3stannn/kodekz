@@ -82,6 +82,18 @@ li a {
     padding-right: 0;
 }
 
+.contact-email {
+    margin-top: 20px;
+}
+
+.contact-email a {
+    color: #737373;
+    text-decoration: underline;
+    font-family: "Geist", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 .mobile-nav .offcanvas-body .navbar-nav {
     display: flex;
     flex-direction: column;
