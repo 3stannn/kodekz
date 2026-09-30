@@ -123,7 +123,7 @@ li a:hover {
     color: #000000;
     font-weight: 600;
     font-family: "Geist Pixel", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .profile-head {
@@ -156,7 +156,7 @@ li a:hover {
 
 .name-container h2,
 .profile-head h2 {
-    font-size: 26px;
+    font-size: 25px;
     font-family: "Geist", sans-serif;
     font-weight: 700;
     margin-bottom: 0;
@@ -180,7 +180,7 @@ li a:hover {
 
 .head-sub {
     font-family: "Geist Pixel", monospace, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: #737373;
     margin: 0;
     display: flex;
@@ -190,7 +190,7 @@ li a:hover {
 }
 
 .head-sub span {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1;
 }
 
@@ -422,7 +422,7 @@ main {
 }
 
 .head h2 {
-    font-size: 24px;
+    font-size: 25px;
     font-family: "Geist Pixel", sans-serif;
     font-weight: 500;
     margin-bottom: 0;
@@ -430,7 +430,7 @@ main {
 
 .head-text {
     text-align: justify;
-    font-size: 14px;
+    font-size: 15px;
     color: #737373;
 }
 
@@ -441,14 +441,14 @@ main {
 }
 
 .text-heavy {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .tags p,
 .tags a {
     font-family: "Geist Pixel", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color: #737373;
 }
 
@@ -556,7 +556,7 @@ main {
     border-radius: 5px;
     text-align: center;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .link-card:hover {
@@ -579,7 +579,7 @@ main {
 }
 
 .stack-card.text {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .stack-card:hover {
