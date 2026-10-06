@@ -708,47 +708,6 @@ main {
     background-color: #216e39;
 }
 
-.carousel-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding: 16px 0;
-
-}
-
-/* Continuous Infinite Track */
-.carousel-track {
-    display: flex;
-    width: max-content;
-    animation: continuousScroll 18s linear infinite;
-    will-change: transform;
-}
-
-.carousel-wrapper:hover .carousel-track {
-    animation-play-state: paused;
-}
-
-@keyframes continuousScroll {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(-50%, 0, 0);
-    }
-}
-
-.carousel-group {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding-right: 12px;
-}
-
-.carousel-group img {
-    height: 250px;
-}
-
 .service-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -766,19 +725,13 @@ main {
     min-height: 180px;
     border: solid 1px rgb(220, 220, 220);
     border-radius: 0;
-    text-align: center;
+    text-align: left;
     padding: 20px 18px 16px;
     background-color: #FFFFFF;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transform: scale(1);
     transition: transform 0.3s ease-out;
     will-change: transform;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    box-sizing: border-box;
 }
 
 .service-card:hover {
@@ -910,10 +863,6 @@ main {
 
     .head-sub {
         font-size: 12px;
-    }
-
-    .carousel-group img {
-        height: 150px;
     }
 }
 
