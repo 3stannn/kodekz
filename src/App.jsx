@@ -12,6 +12,7 @@ import Stacks from './Stacks'
 import Experiences from './Experiences'
 import Certificates from './Certificates'
 import Projects from './Projects'
+import SplashScreen from './components/layout/SplashScreen'
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
 function App() {
   return (
     <>
+      <SplashScreen />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

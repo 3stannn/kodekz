@@ -7,6 +7,71 @@ body {
   color: #1D1D1D;
 }
 
+body.splash-active {
+  overflow: hidden;
+}
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+.splash-screen::before {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 200vmax #1D1D1D;
+  content: "";
+}
+
+.splash-screen--leaving::before {
+  width: 300vmax;
+  height: 300vmax;
+  transition: width 500ms cubic-bezier(0.76, 0, 0.24, 1),
+    height 500ms cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.splash-screen--leaving {
+  pointer-events: none;
+}
+
+.splash-screen__hello {
+  width: min(34vw, 12rem);
+  animation: hello-appear 700ms cubic-bezier(0.22, 1, 0.36, 1) both,
+    hello-disappear 200ms ease 1050ms forwards;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.splash-screen--leaving .splash-screen__hello {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+@keyframes hello-appear {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes hello-disappear {
+  to { opacity: 0; transform: scale(0.96); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-screen,
+  .splash-screen::before,
+  .splash-screen__hello {
+    animation: none;
+    transition-duration: 100ms;
+  }
+}
+
 ::selection {
   background-color: #1D1D1D;
   color: #F3F3F3;
