@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+  color: #1D1D1D;
+}
+
+::selection {
+  background-color: #1D1D1D;
+  color: #F3F3F3;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Geist Pixel", sans-serif;
+  scrollbar-color: #737373 #E4E4E4;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E4E4E4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border: 2px solid #E4E4E4;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1D1D1D;
+}
+
+.github-calendar {
+  color: #1D1D1D;
+}
+
+.github-calendar text {
+  fill: #1D1D1D;
+  font-family: "Geist Pixel", sans-serif;
+  font-size: 12px;
+}
+
+.github-calendar .react-activity-calendar__footer,
+.github-calendar .react-activity-calendar__footer * {
+  font-size: 12px;
+}
+
+.brand-name {
+  font-weight: 800;
+}
+
+.devName {
+  font-family: "Geist Pixel", sans-serif;
+  font-weight: 600;
+  color: #1D1D1D;
+}
+
+.role {
+  font-family: "Geist Pixel", sans-serif;
+  font-weight: 600;
+  color: #1D1D1D;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.text-heavy {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1D1D1D;
+}
+
+a {
+  font-family: "Geist Pixel", sans-serif;
+}
+
+.button {
+  background-color: #1D1D1D;
+  padding: 4px 8px;
+}
+
+.button:hover {
+  color: #F3F3F3;
+}
+
+.link {
+  padding: 4px;
+}
+
+.tab:hover {
+  color: #1D1D1D;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: #1D1D1D;
+  font-weight: 600;
+}
+
+.email {
+  text-decoration: underline;
+}
+
+.email:hover {
+  color: #1D1D1D;
+}
+
+.tile {
+  padding: 20px;
+  border-top: 1px solid #E4E4E4;
+}
+
+.tile:hover .link {
+  color: #1D1D1D;
+  font-weight: 600;
+}
+
+.tile h1 {
+  font-weight: 600;
+}
+
+.left {
+  border-right: 1px solid #E4E4E4;
+}
+
+.right {
+  border-left: 1px solid #E4E4E4;
+}
+
+.card {
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+  padding: 20px 0;
+}
+
+.card.thin {
+  padding: 10px 0 !important;
+}
+
+.card:hover {
+  background-color: #E4E4E4;
+}
+
+.card.bottom {
+  border-top: none;
+}
+
+.stack {
+  padding: 4px 8px;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+
+.stack.dotted {
+  border: 1px dashed #E4E4E4;
+}
+
+.stack.dotted:hover {
+  border: 1px dashed #737373;
+}
+
+.outer-card {
+  background-color: #FFFFFF;
+  padding: 8px;
+  min-height: 150px;
+  border-radius: 16px;
+}
+
+.outer-card:hover .link {
+  color: #1D1D1D;
+  font-weight: 600;
+}
+
+.inner-card {
+  border: 1px solid #E4E4E4;
+  border-radius: 8px;
+}
+
+.hr {
+  border-top: 1px solid #E4E4E4;
+}
