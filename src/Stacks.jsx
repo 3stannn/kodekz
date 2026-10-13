@@ -36,7 +36,7 @@ const stackGroups = [
             "Vite",
             "Antigravity",
             "Codex",
-            "Visual Studeio",
+            "Visual Studio",
             "Postman",
             "npm",
         ],
