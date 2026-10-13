@@ -76,6 +76,12 @@ body.mobile-menu-active {
   justify-content: space-between;
 }
 
+.mobile-menu__bar,
+.desktop-nav__bar,
+.sidebar-availability {
+  margin-inline: 8px;
+}
+
 .mobile-menu__links {
   display: flex;
   flex-direction: column;
@@ -93,7 +99,7 @@ body.mobile-menu-active {
   justify-content: space-between;
   border-right: 1px solid #e4e4e4;
   background-color: #f3f3f3;
-  padding: 24px;
+  padding: 16px;
   width: 248px;
   height: 100dvh;
   position: fixed;
@@ -211,7 +217,7 @@ body.mobile-menu-active {
 }
 
 .navigation {
-  padding: 8px 16px;
+  padding: 8px;
 }
 
 .navigation:hover {

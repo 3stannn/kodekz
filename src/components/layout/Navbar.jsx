@@ -233,7 +233,7 @@ function Navbar() {
                     <div>
                         <div className="mobile-menu__bar">
                             <Link
-                                className="whitespace-nowrap brand-name ml-4"
+                                className="whitespace-nowrap brand-name"
                                 to="/"
                                 tabIndex={isMobileOpen ? 0 : -1}
                                 onClick={() => setIsMobileOpen(false)}
@@ -246,6 +246,18 @@ function Navbar() {
                                 label="Close navigation menu"
                                 onClick={() => setIsMobileOpen(false)}
                             />
+                        </div>
+
+                        <div className="sidebar-availability flex flex-row items-center gap-2">
+                            <svg
+                                width={8}
+                                height={8}
+                                viewBox="0 0 24 24"
+                                aria-label="Available"
+                            >
+                                <circle cx="12" cy="12" r="10" fill="#22c55e" />
+                            </svg>
+                            <p className="text">Available</p>
                         </div>
 
                         <div className="mobile-menu__links">
@@ -269,7 +281,7 @@ function Navbar() {
                         <p className="text-heavy">
                             Let's building something great together.
                         </p>
-                        <div className="flex flex-row gap-2 items-center mt-2">
+                        <div className="flex flex-row gap-2 items-center mt-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
@@ -316,7 +328,7 @@ function Navbar() {
                     </div>
 
                     <div id="desktop-menu" className="desktop-nav__content">
-                        <div className="flex flex-row items-center gap-2">
+                        <div className="sidebar-availability flex flex-row items-center gap-2">
                             <svg
                                 width={8}
                                 height={8}
@@ -327,7 +339,7 @@ function Navbar() {
                             </svg>
                             <p className="text">Available</p>
                         </div>
-                        <div className="mt-12 flex flex-col">
+                        <div className="mt-12 flex flex-col gap-1">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
@@ -345,7 +357,7 @@ function Navbar() {
                 <div className="desktop-nav__footer mb-2">
                     <p className="hr mb-6"></p>
                     <p className="text-heavy">Let's building something great together.</p>
-                    <div className="flex flex-row gap-2 items-center mt-2">
+                    <div className="flex flex-row gap-2 items-center mt-4">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
