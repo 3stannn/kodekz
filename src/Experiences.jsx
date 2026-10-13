@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function Experiences() {
     return (
@@ -7,14 +7,23 @@ function Experiences() {
                 <div>
                     <p className="text mb-2">01 — experience</p>
                     <h1 className="text-3xl font-semibold tracking-tight">Experience</h1>
-                    <p className="text mt-3 max-w-xl">Taking client projects from initial wireframe to live, deployed product.</p>
+                    <p className="text mt-3 max-w-xl">
+                        Taking client projects from initial wireframe to live, deployed
+                        product.
+                    </p>
                 </div>
-                <Link className="text tab whitespace-nowrap" to="/">&#8592; back home</Link>
+                <Link className="text tab whitespace-nowrap" to="/">
+                    &#8592; back home
+                </Link>
             </div>
             <div className="card flex flex-row justify-between">
                 <div>
-                    <h1 className="text-heavy">Programmer's Den – Finance Team | Graphic Designer</h1>
-                    <p className="text">Tarlac State University | College of Computer Studies</p>
+                    <h1 className="text-heavy">
+                        Programmer's Den – Finance Team | Graphic Designer
+                    </h1>
+                    <p className="text">
+                        Tarlac State University | College of Computer Studies
+                    </p>
                 </div>
                 <div>
                     <p className="text text-right">2025 - 2026</p>
@@ -22,8 +31,12 @@ function Experiences() {
             </div>
             <div className="card bottom flex flex-row justify-between">
                 <div>
-                    <h1 className="text-heavy">Junior Philippine Computer Society – Graphic Designer</h1>
-                    <p className="text">Tarlac State University | College of Computer Studies</p>
+                    <h1 className="text-heavy">
+                        Junior Philippine Computer Society – Graphic Designer
+                    </h1>
+                    <p className="text">
+                        Tarlac State University | College of Computer Studies
+                    </p>
                 </div>
                 <div>
                     <p className="text text-right">2024 - 2025</p>
@@ -48,6 +61,6 @@ function Experiences() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-export default Experiences
+export default Experiences;

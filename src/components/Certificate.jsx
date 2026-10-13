@@ -11,6 +11,6 @@ function Certificate(props) {
                 </a>
             </div>
         </div>
-    )
+    );
 }
-export default Certificate
+export default Certificate;

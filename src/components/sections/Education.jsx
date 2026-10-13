@@ -1,8 +1,8 @@
 function Education() {
     return (
         <div className="max-w-3xl mx-auto px-6 mt-12">
-            <div className='flex flex-row justify-between mb-4'>
-                <h1 className='text'>04 — education</h1>
+            <div className="flex flex-row justify-between mb-4">
+                <h1 className="text">04 — education</h1>
             </div>
             <div className="card flex flex-row justify-between">
                 <div>
@@ -14,6 +14,6 @@ function Education() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-export default Education
+export default Education;
