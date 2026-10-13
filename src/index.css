@@ -461,8 +461,9 @@ body.splash-active {
 
 .email {
   text-decoration: underline;
+   color: #1d1d1d;
 }
 
 .email:hover {
-  color: #1d1d1d;
+  font-weight: 600;
 }
