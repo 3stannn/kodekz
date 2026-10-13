@@ -42,7 +42,7 @@ function Hero() {
                                 <h1 className='text-xl'>&lt; 1</h1>
                                 <p className='text link'>&#8599;&#xfe0e;</p>
                             </div>
-                            <p className='text'>experience</p>
+                            <p className='text'>year experience</p>
                         </Link>
                         <Link className='tile w-full' to="/stacks">
                             <div className='flex flex-row justify-between'>
