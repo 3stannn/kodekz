@@ -94,7 +94,7 @@ const navLinks = [
     },
     {
         label: "Services",
-        to: "/",
+        to: "/services",
         icon: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const navLinks = [
     },
     {
         label: "Contact",
-        to: "/",
+        to: "/contacts",
         icon: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ function Navbar() {
                         >
                             <circle cx="12" cy="12" r="10" fill="#22c55e" />
                         </svg>
-                        <p className="text mr-4">Available</p>
+                        <p className="text small mr-4">Available</p>
                     </div>
                 </div>
 
@@ -247,19 +247,6 @@ function Navbar() {
                                 onClick={() => setIsMobileOpen(false)}
                             />
                         </div>
-
-                        <div className="sidebar-availability flex flex-row items-center gap-2">
-                            <svg
-                                width={8}
-                                height={8}
-                                viewBox="0 0 24 24"
-                                aria-label="Available"
-                            >
-                                <circle cx="12" cy="12" r="10" fill="#22c55e" />
-                            </svg>
-                            <p className="text">Available</p>
-                        </div>
-
                         <div className="mobile-menu__links">
                             {navLinks.map((link) => (
                                 <Link
@@ -278,7 +265,7 @@ function Navbar() {
 
                     <div className="mobile-menu__footer">
                         <p className="hr mb-6"></p>
-                        <p className="text">
+                        <p className="text small">
                             Let's building something great together.
                         </p>
                         <div className="flex flex-row gap-2 items-center mt-4">
@@ -337,7 +324,7 @@ function Navbar() {
                             >
                                 <circle cx="12" cy="12" r="10" fill="#22c55e" />
                             </svg>
-                            <p className="text">Available</p>
+                            <p className="text small">Available</p>
                         </div>
                         <div className="mt-12 flex flex-col gap-1">
                             {navLinks.map((link) => (
@@ -356,7 +343,7 @@ function Navbar() {
 
                 <div className="desktop-nav__footer mb-2">
                     <p className="hr mb-6"></p>
-                    <p className="text">Let's building something great together.</p>
+                    <p className="text small">Let's building something great together.</p>
                     <div className="flex flex-row gap-2 items-center mt-4">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

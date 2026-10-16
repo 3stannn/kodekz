@@ -13,6 +13,8 @@ import Experiences from "./Experiences";
 import Certificates from "./Certificates";
 import Projects from "./Projects";
 import SplashScreen from "./components/layout/SplashScreen";
+import Services from "./Services";
+import Contacts from "./Contacts";
 
 function Home() {
   return (
@@ -40,6 +42,8 @@ function App() {
           <Route path="/stacks" element={<Stacks />} />
           <Route path="/certificates" element={<Certificates />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
         <Footer />
       </div>

@@ -346,6 +346,10 @@ body.splash-active {
   color: #737373;
 }
 
+.text.small {
+  font-size: 12px;
+}
+
 .text-heavy {
   font-size: 14px;
   font-weight: 600;
@@ -413,6 +417,11 @@ body.splash-active {
 
 .card.bottom {
   border-top: none;
+}
+
+.card:hover .link {
+  color: #1d1d1d;
+  font-weight: 600;
 }
 
 .stack {
