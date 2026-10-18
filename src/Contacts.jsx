@@ -43,7 +43,20 @@ function Contacts() {
                         Get in Touch
                     </h1>
                     <p className="text mt-3 max-w-xl">Have an opportunity, a project in mind, or just want to connect? Reach out anytime.</p>
-                    <div className="mt-2">
+                    <div className="mt-2 flex flex-row items-center gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M5 4H19C20.6569 4 22 5.34315 22 7V17C22 18.6569 20.6569 20 19 20H5C3.34315 20 2 18.6569 2 17V7C2 5.34315 3.34315 4 5 4ZM2 7L11.2929 11C11.7154 11.2817 12.2846 11.2817 12.7071 11L22 7" />
+                        </svg>
                         <a className="text-heavy email" href="mailto:thristandave12@gmail.com">
                             thristandave12@gmail.com
                         </a>

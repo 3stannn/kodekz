@@ -251,7 +251,7 @@ function Navbar() {
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
-                                    className="text navigation flex items-center gap-3"
+                                    className="text small navigation flex items-center gap-3"
                                     to={link.to}
                                     tabIndex={isMobileOpen ? 0 : -1}
                                     onClick={() => setIsMobileOpen(false)}
@@ -330,7 +330,7 @@ function Navbar() {
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
-                                    className="text navigation flex items-center gap-3"
+                                    className="text small navigation flex items-center gap-3"
                                     to={link.to}
                                 >
                                     {link.icon}
