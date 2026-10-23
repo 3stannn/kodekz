@@ -264,11 +264,11 @@ function Navbar() {
                     </div>
 
                     <div className="mobile-menu__footer">
-                        <p className="hr mb-6"></p>
+                        <p className="hr mb-4"></p>
                         <p className="text small">
                             Let's building something great together.
                         </p>
-                        <div className="flex flex-row gap-2 items-center mt-4">
+                        <div className="flex flex-row gap-2 items-center mt-2">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
@@ -342,9 +342,9 @@ function Navbar() {
                 </div>
 
                 <div className="desktop-nav__footer mb-2">
-                    <p className="hr mb-6"></p>
+                    <p className="hr mb-4"></p>
                     <p className="text small">Let's building something great together.</p>
-                    <div className="flex flex-row gap-2 items-center mt-4">
+                    <div className="flex flex-row gap-2 items-center mt-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
