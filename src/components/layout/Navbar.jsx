@@ -247,7 +247,7 @@ function Navbar() {
                                 onClick={() => setIsMobileOpen(false)}
                             />
                         </div>
-                        <div className="mobile-menu__links">
+                        <div className="mobile-menu__links pl-4 pr-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
@@ -263,7 +263,7 @@ function Navbar() {
                         </div>
                     </div>
 
-                    <div className="mobile-menu__footer">
+                    <div className="mobile-menu__footer pl-4 pr-4">
                         <p className="hr mb-4"></p>
                         <p className="text small">
                             Let's building something great together.
@@ -326,7 +326,7 @@ function Navbar() {
                             </svg>
                             <p className="text small">Available</p>
                         </div>
-                        <div className="mt-12 flex flex-col gap-1">
+                        <div className="mt-12 flex flex-col gap-1 pl-4 pr-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
@@ -341,7 +341,7 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className="desktop-nav__footer mb-2">
+                <div className="desktop-nav__footer mb-2 pl-4 pr-4">
                     <p className="hr mb-4"></p>
                     <p className="text small">Let's building something great together.</p>
                     <div className="flex flex-row gap-2 items-center mt-2">
