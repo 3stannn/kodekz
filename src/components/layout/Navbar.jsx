@@ -315,7 +315,7 @@ function Navbar() {
                     </div>
 
                     <div id="desktop-menu" className="desktop-nav__content">
-                        <div className="sidebar-availability flex flex-row items-center gap-2">
+                        <div className="sidebar-availability flex flex-row items-center gap-2 pl-4">
                             <svg
                                 width={8}
                                 height={8}
