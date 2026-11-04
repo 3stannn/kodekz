@@ -12,7 +12,6 @@ import Stacks from "./Stacks";
 import Experiences from "./Experiences";
 import Certificates from "./Certificates";
 import Projects from "./Projects";
-import SplashScreen from "./components/layout/SplashScreen";
 import Services from "./Services";
 import Contacts from "./Contacts";
 
@@ -33,7 +32,6 @@ function Home() {
 function App() {
   return (
     <>
-      <SplashScreen />
       <Navbar />
       <div className="page-shell">
         <Routes>
