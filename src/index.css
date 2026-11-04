@@ -424,6 +424,10 @@ a {
   background-color: #DCE8F8;
 }
 
+.proj-card a:hover {
+  text-decoration: underline;
+}
+
 .proj-card .text {
   color: #000000;
 }
