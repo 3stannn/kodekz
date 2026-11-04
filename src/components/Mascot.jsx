@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 const logos = ["claude", "antigravity", "codex"];
 
-export function Mascot({ small = false, active = true }) {
+export function Mascot({ small = false, active = true, className = "" }) {
   const mascot = useRef(null);
   const body = useRef(null);
   const particles = useRef([]);
@@ -264,7 +264,7 @@ export function Mascot({ small = false, active = true }) {
       <button
         ref={mascot}
         type="button"
-        className={`mascot ${small ? "size-14" : "size-14 sm:size-18"}`}
+        className={`mascot ${className.includes("size-") || className.includes("w-") ? "" : small ? "size-14" : "size-20 sm:size-28"} ${className}`.trim()}
         aria-label="Make Kip toss logos"
         title="Click to play"
         disabled={!active}

@@ -43,6 +43,7 @@ function Hero() {
                                 <span className="text"><b>AI Coding Agent Orchestration</b></span>
                                 <span className="text">Pre-Configured Agent Skills</span>
                                 <span className="text">Built for Codex, Claude Code & Antigravity</span>
+                                <a className='mt-4' href="https://usekip.vercel.app/"><span className='text'><b>Check it out &#8599;&#xfe0e;</b></span></a>
                             </div>
                         </a>
                         <Mascot />

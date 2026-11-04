@@ -414,7 +414,7 @@ body.splash-active {
 .card {
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
-  padding: 20px 0;
+  padding: 20px 8px;
 }
 
 .card.thin {
@@ -500,7 +500,7 @@ body.splash-active {
   gap: 12px;
   border: 1px solid #e4e4e4;
   border-radius: 20px;
-  padding: 20px 40px;
+  padding: 20px;
   background-color: #DCE8F8;
 }
 
