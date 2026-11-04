@@ -500,16 +500,12 @@ body.splash-active {
   gap: 12px;
   border: 1px solid #e4e4e4;
   border-radius: 20px;
-  padding: 16px 20px;
+  padding: 20px 40px;
   background-color: #DCE8F8;
 }
 
 .proj-card .text {
   color: #000000;
-}
-
-.proj-card__copy {
-  min-width: 0;
 }
 
 .mascot {
