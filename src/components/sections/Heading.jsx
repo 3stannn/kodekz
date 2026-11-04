@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import resume from '../../assets/resume.pdf'
 import devpfp from '../../assets/dev.png'
+import { Mascot } from '../Mascot'
 
 function Hero() {
     return (
@@ -35,7 +36,17 @@ function Hero() {
                         <a className="text link" target="_blank" href="https://www.linkedin.com/in/kodekz01">linkedin &#8599;&#xfe0e;</a>
                     </div>
                 </div>
-                <div className="flex flex-row gap-8 mt-12">
+                <div className='mt-12'>
+                    <div className='proj-card'>
+                        <div className="flex flex-col">
+                            <span className="text"><b>AI Coding Agent Orchestration</b></span>
+                            <span className="text">Pre-Configured Agent Skills</span>
+                            <span className="text">Built for Codex, Claude Code & Antigravity</span>
+                        </div>
+                        <Mascot />
+                    </div>
+                </div>
+                <div className="flex flex-row gap-8 mt-6">
                     <div className="flex w-full justify-between">
                         <Link className='tile left w-full' to="/experiences">
                             <div className='flex flex-row justify-between'>

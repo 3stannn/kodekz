@@ -10,8 +10,21 @@ function Projects() {
                         view all &#8594;&#xfe0e;
                     </Link>
                 </div>
-                <a target="_blank" href="https://insta-frame-three.vercel.app/">
+                <a target="_blank" href="https://usekip.vercel.app/">
                     <div className="card flex flex-row justify-between">
+                        <div>
+                            <h1 className="text-heavy">
+                                Kip - AI Coding Agent Orchestrator
+                            </h1>
+                            <p className="text">Developer</p>
+                        </div>
+                        <div>
+                            <p className="text text-right">Dev Tool</p>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://insta-frame-three.vercel.app/">
+                    <div className="card bottom flex flex-row justify-between">
                         <div>
                             <h1 className="text-heavy">
                                 InstaFrame — Webpage Studio & Responsive Viewports
@@ -32,20 +45,6 @@ function Projects() {
                         </div>
                         <div>
                             <p className="text text-right">Web App</p>
-                        </div>
-                    </div>
-                </a>
-                <a
-                    target="_blank"
-                    href="https://marketplace.visualstudio.com/items?itemName=kodekz01.simply-slate-theme"
-                >
-                    <div className="card bottom flex flex-row justify-between">
-                        <div>
-                            <h1 className="text-heavy">Simply Slate Theme</h1>
-                            <p className="text"></p>
-                        </div>
-                        <div>
-                            <p className="text text-right">VS Code Theme</p>
                         </div>
                     </div>
                 </a>

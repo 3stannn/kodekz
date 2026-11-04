@@ -492,3 +492,82 @@ body.splash-active {
 .email:hover {
   font-weight: 600;
 }
+
+.proj-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  padding: 16px 20px;
+  background-color: #DCE8F8;
+}
+
+.proj-card .text {
+  color: #000000;
+}
+
+.proj-card__copy {
+  min-width: 0;
+}
+
+.mascot {
+  --color-accent: #93b4e8;
+  display: block;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mascot:focus-visible {
+  outline: 2px solid #303030;
+  outline-offset: 4px;
+}
+
+.mascot:disabled {
+  pointer-events: none;
+}
+
+.mascot-body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: center 85%;
+}
+
+.mascot-eyes {
+  transform: translate(var(--look-x, 0px), var(--look-y, 0px));
+}
+
+.mascot-blink {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.mascot-logo-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mascot-logo-particle {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 12px;
+  background: #fff;
+  object-fit: contain;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 6px 18px rgb(18 18 21 / 12%);
+}

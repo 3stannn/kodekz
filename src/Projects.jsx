@@ -15,11 +15,30 @@ function Projects() {
                     &#8592; back home
                 </Link>
             </div>
+            <a target="_blank" href="https://usekip.vercel.app/">
+                <div className="card flex flex-col justify-between gap-4">
+                    <div className="flex flex-row justify-between">
+                        <div>
+                            <h1 className="text-heavy">Kip - AI Coding Agent Orchestrator</h1>
+                        </div>
+                        <div>
+                            <p className="text text-right">Dev Tool</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text">
+                            Kip is an easy-setup AI orchestration utility that prevents
+                            low-quality AI code generation, optimizing workflows for Codex,
+                            Claude Code, and Antigravity.
+                        </p>
+                    </div>
+                </div>
+            </a>
             <a
                 target="_blank"
                 href="https://marketplace.visualstudio.com/items?itemName=kodekz01.simply-slate-theme"
             >
-                <div className="card flex flex-col justify-between gap-4">
+                <div className="card bottom flex flex-col justify-between gap-4">
                     <div className="flex flex-row justify-between">
                         <div>
                             <h1 className="text-heavy">Simply Slate Theme</h1>
