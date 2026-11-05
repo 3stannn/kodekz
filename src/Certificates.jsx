@@ -7,13 +7,13 @@ function Certificates() {
             <div className="mb-10 flex items-start justify-between gap-6">
                 <div>
                     <p className="text mb-2">05 — certifications</p>
-                    <h1 className="text-3xl font-semibold tracking-tight">
+                    <h1 className="text-2xl font-medium tracking-tight">
                         Certificates
                     </h1>
-                    <p className="text mt-3 max-w-xl">Credentials & Qualifications.</p>
+                    <p className="text mt-8 max-w-xl">Credentials & Qualifications.</p>
                 </div>
                 <Link className="text tab whitespace-nowrap" to="/">
-                    &#8592; back home
+                    <span className="link-arrow link-arrow--back" aria-hidden="true">&#8592;</span> back home
                 </Link>
             </div>
             <div>

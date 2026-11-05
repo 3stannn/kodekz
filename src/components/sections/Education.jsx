@@ -6,8 +6,8 @@ function Education() {
             </div>
             <div className="card flex flex-row justify-between">
                 <div>
-                    <h1 className="text-heavy">Tarlac State University</h1>
-                    <p className="text">Bachelor of Science in Computer Science</p>
+                    <h1 className="text-heavy normal">Tarlac State University</h1>
+                    <p className="text normal">Bachelor of Science in Computer Science</p>
                 </div>
                 <div>
                     <p className="text text-right">2024 - Present</p>

@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom'
 import resume from '../../assets/resume.pdf'
 import devpfp from '../../assets/dev.png'
 import { Mascot } from '../Mascot'
+import GradientASCII from '../GradientASCII'
+
+const kipColors = ['#1e3fd8', '#f6f8ff', '#a5d8ff', '#38bdf8']
 
 function Hero() {
     return (
@@ -24,25 +27,34 @@ function Hero() {
                         </div>
                     </div>
                 </div>
-                <p className="text text-justify mt-6">A 3rd-year Computer Science student, aspiring software engineer.
+                <p className="text normal text-justify mt-6">A 3rd-year Computer Science student, aspiring software engineer.
                     Building clean full-stack platforms, bridging frontier AI models with agentic tooling,
                     and architecting normalized relational backends.
                 </p>
-                <p className='text text-justify mt-2'>Constantly learning and improving through hands-on development.</p>
+                <p className='text normal text-justify mt-2'>Constantly learning and improving through hands-on development.</p>
                 <div className="flex flex-row gap-8 mt-6 justify-between">
                     <a className="text button" target="_blank" href={resume}>Download CV</a>
                     <div className='flex flex-row gap-8'>
-                        <a className="text link" target="_blank" href="https://github.com/3stannn">github &#8599;&#xfe0e;</a>
-                        <a className="text link" target="_blank" href="https://www.linkedin.com/in/kodekz01">linkedin &#8599;&#xfe0e;</a>
+                        <a className="text link" target="_blank" href="https://github.com/3stannn">github <span className="link-arrow" aria-hidden="true">&#8599;</span></a>
+                        <a className="text link" target="_blank" href="https://www.linkedin.com/in/kodekz01">linkedin <span className="link-arrow" aria-hidden="true">&#8599;</span></a>
                     </div>
                 </div>
-                <div className='mt-12'>
+                <div className='mt-6'>
                     <div className='proj-card'>
-                        <div className="flex flex-col">
-                            <span className="text"><b>AI Coding Agent Orchestration</b></span>
-                            <span className="text">Pre-Configured Agent Skills</span>
-                            <span className="text">Built for Codex, Claude Code & Antigravity</span>
-                            <a className='mt-4' target='_blank' href="https://usekip.vercel.app/"><span className='text'><b>Check it out &#8599;&#xfe0e;</b></span></a>
+                        <div className="proj-card__background" aria-hidden="true">
+                            <GradientASCII
+                                colors={kipColors}
+                                shape="horizon"
+                                characters=" =+xX0S8#@"
+                                cellSize={18}
+                                density={0.8}
+                            />
+                        </div>
+                        <div className="proj-card__copy flex flex-col">
+                            <span className="text normal"><b>AI Coding Agent Orchestration</b></span>
+                            <span className="text normal">Pre-Configured Agent Skills</span>
+                            <span className="text normal">Built for Codex, Claude Code & Antigravity</span>
+                            <a className='mt-4' target='_blank' href="https://usekip.vercel.app/"><span className='text'><b>Check it out <span className="link-arrow" aria-hidden="true">&#8599;</span></b></span></a>
                         </div>
                         <Mascot />
                     </div>
@@ -52,23 +64,23 @@ function Hero() {
                         <Link className='tile left w-full' to="/experiences">
                             <div className='flex flex-row justify-between'>
                                 <h1 className='text-xl'>&lt; 1</h1>
-                                <p className='text link'>&#8599;&#xfe0e;</p>
+                                <p className='text link'><span className="link-arrow" aria-hidden="true">&#8599;</span></p>
                             </div>
-                            <p className='text'>year experience</p>
+                            <p className='text normal'>year experience</p>
                         </Link>
                         <Link className='tile w-full' to="/stacks">
                             <div className='flex flex-row justify-between'>
                                 <h1 className='text-xl'>10+</h1>
-                                <p className='text link'>&#8599;&#xfe0e;</p>
+                                <p className='text link'><span className="link-arrow" aria-hidden="true">&#8599;</span></p>
                             </div>
-                            <p className='text'>technologies</p>
+                            <p className='text normal'>technologies</p>
                         </Link>
                         <Link className='tile right w-full' to="/projects">
                             <div className='flex flex-row justify-between'>
                                 <h1 className='text-xl'>3</h1>
-                                <p className='text link'>&#8599;&#xfe0e;</p>
+                                <p className='text link'><span className="link-arrow" aria-hidden="true">&#8599;</span></p>
                             </div>
-                            <p className='text'>projects shipped</p>
+                            <p className='text normal'>projects shipped</p>
                         </Link>
                     </div>
                 </div>

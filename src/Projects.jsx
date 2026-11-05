@@ -6,13 +6,13 @@ function Projects() {
             <div className="mb-10 flex items-start justify-between gap-6">
                 <div>
                     <p className="text mb-2">02 — projects</p>
-                    <h1 className="text-3xl font-semibold tracking-tight">Projects </h1>
-                    <p className="text mt-3 max-w-xl">
+                    <h1 className="text-2xl font-medium tracking-tight">Projects </h1>
+                    <p className="text mt-8 max-w-xl">
                         Systems I've built for clients, and the things I build for myself.
                     </p>
                 </div>
                 <Link className="text tab whitespace-nowrap" to="/">
-                    &#8592; back home
+                    <span className="link-arrow link-arrow--back" aria-hidden="true">&#8592;</span> back home
                 </Link>
             </div>
             <a target="_blank" href="https://usekip.vercel.app/">

@@ -41,7 +41,7 @@ export default function GitHubCalendarWidget() {
                     target="_blank"
                     href="https://github.com/3stannn"
                 >
-                    @3stannn &#8599;&#xfe0e;
+                    @3stannn <span className="link-arrow" aria-hidden="true">&#8599;</span>
                 </a>
             </div>
             <GitHubCalendar

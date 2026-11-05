@@ -19,17 +19,17 @@ function Stack() {
             <div className="flex flex-row justify-between mb-4">
                 <h1 className="text">03 — tech stack</h1>
                 <Link className="text tab" to="/stacks">
-                    view all &#8594;&#xfe0e;
+                    view all <span className="link-arrow" aria-hidden="true">&#8594;</span>
                 </Link>
             </div>
             <div className="flex flex-wrap gap-2 w-full">
                 {technologies.map((technology) => (
-                    <span key={technology} className="stack text">
+                    <span key={technology} className="stack text normal">
                         {technology}
                     </span>
                 ))}
                 <Link className="stack dotted text tab" to="/stacks">
-                    view all &#8594;&#xfe0e;
+                    view all <span className="link-arrow" aria-hidden="true">&#8594;</span>
                 </Link>
             </div>
         </div>

@@ -7,7 +7,7 @@ function Certifications() {
             <div className="flex flex-row justify-between mb-4">
                 <h1 className="text">05 — certifications</h1>
                 <Link className="text tab" to="/certificates">
-                    view all &#8594;&#xfe0e;
+                    view all <span className="link-arrow" aria-hidden="true">&#8594;</span>
                 </Link>
             </div>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-3">

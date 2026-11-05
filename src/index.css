@@ -276,6 +276,10 @@ a {
   color: #737373;
 }
 
+.text.normal {
+  font-family: "Geist", sans-serif;
+}
+
 .text.small {
   font-size: 12px;
 }
@@ -284,6 +288,10 @@ a {
   font-size: 14px;
   font-weight: 600;
   color: #1d1d1d;
+}
+
+.text-heavy.normal {
+  font-family: "Geist", sans-serif;
 }
 
 .button {
@@ -297,6 +305,41 @@ a {
 
 .link {
   padding: 4px;
+}
+
+.link-arrow {
+  display: inline-block;
+  margin-inline-start: 0.2em;
+  font-family: ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  vertical-align: 0.05em;
+  opacity: 0.75;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.link-arrow--back {
+  --arrow-shift: -2px;
+  margin-inline-start: 0;
+  margin-inline-end: 0.2em;
+}
+
+a:hover .link-arrow,
+a:focus-visible .link-arrow {
+  opacity: 1;
+  transform: translateX(var(--arrow-shift, 2px));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-arrow {
+    transition: none;
+  }
+
+  a:hover .link-arrow,
+  a:focus-visible .link-arrow {
+    transform: none;
+  }
 }
 
 .link:hover {
@@ -414,6 +457,9 @@ a {
 }
 
 .proj-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -421,7 +467,34 @@ a {
   border: 1px solid #e4e4e4;
   border-radius: 20px;
   padding: 20px;
-  background-color: #DCE8F8;
+  background-color: #F3F3F3;
+}
+
+.proj-card:hover a {
+  text-decoration: underline;
+}
+
+.proj-card__background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.proj-card__background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(235 243 255 / 58%) 0%,
+    rgb(235 243 255 / 42%) 58%,
+    rgb(235 243 255 / 8%) 100%
+  );
+}
+
+.proj-card__copy {
+  min-width: 0;
 }
 
 .proj-card a:hover {
@@ -429,7 +502,20 @@ a {
 }
 
 .proj-card .text {
-  color: #000000;
+  color: #172d48;
+}
+
+.proj-card__copy b {
+  color: #0b1c32;
+}
+
+.proj-card a:focus-visible {
+  outline: 2px solid #172d48;
+  outline-offset: 4px;
+}
+
+.proj-card .mascot-head {
+  filter: drop-shadow(0 3px 5px rgb(23 45 72 / 16%));
 }
 
 .mascot {

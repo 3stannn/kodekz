@@ -38,10 +38,10 @@ function Contacts() {
         <div className="mx-auto mt-12 max-w-3xl px-6">
             <div className="mb-10 flex items-start justify-between gap-6">
                 <div>
-                    <h1 className="text-3xl font-semibold tracking-tight">
+                    <h1 className="text-2xl font-medium tracking-tight">
                         Get in Touch
                     </h1>
-                    <p className="text mt-3 max-w-xl">Have an opportunity, a project in mind, or just want to connect? Reach out anytime.</p>
+                    <p className="text mt-8 max-w-xl">Have an opportunity, a project in mind, or just want to connect? Reach out anytime.</p>
                     <div className="mt-2 flex flex-row items-center gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ function Contacts() {
                     </div>
                 </div>
                 <Link className="text tab whitespace-nowrap" to="/">
-                    &#8592; back home
+                    <span className="link-arrow link-arrow--back" aria-hidden="true">&#8592;</span> back home
                 </Link>
             </div>
             <div>
@@ -86,7 +86,7 @@ function Contacts() {
                                             <p className="text-heavy">{contact.name}</p>
                                             <p className="text">@{contact.username}</p>
                                         </div>
-                                        <p className="text link">&#8599;&#xfe0e;</p>
+                                        <p className="text link"><span className="link-arrow" aria-hidden="true">&#8599;</span></p>
                                     </div>
                                 </a>
                             ))}
