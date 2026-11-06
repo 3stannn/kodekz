@@ -16,7 +16,7 @@ function Projects() {
                 <a target="_blank" href="https://usekip.vercel.app/">
                     <div className="card flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy normal">
+                            <h1 className="text-heavy normal link-title">
                                 Kip - AI Coding Agent Orchestrator
                             </h1>
                             <p className="text">
@@ -32,7 +32,7 @@ function Projects() {
                 <a target="_blank" href="https://insta-frame-three.vercel.app/">
                     <div className="card bottom flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy normal">
+                            <h1 className="text-heavy normal link-title">
                                 InstaFrame — Webpage Studio & Responsive Viewports
                             </h1>
                             <p className="text">
@@ -48,7 +48,7 @@ function Projects() {
                 <a target="_blank" href="https://schedy-sepia.vercel.app/">
                     <div className="card bottom flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy normal">
+                            <h1 className="text-heavy normal link-title">
                                 Schedy — Shared Workspace Calendar
                             </h1>
                             <p className="text">
