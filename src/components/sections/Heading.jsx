@@ -23,12 +23,12 @@ function Hero() {
                             </svg>
                         </div>
                         <div>
-                            <h1 className='text role'>&#9657; Web Developer</h1>
+                            <h1 className='text font-normal role'>&#9657; Web Developer</h1>
                         </div>
                     </div>
                 </div>
-                <p className="text normal text-justify mt-6">A 3rd-year Computer Science student, aspiring software engineer.
-                    Building clean full-stack platforms, bridging frontier AI models with agentic tooling,
+                <p className="text font-normal normal text-justify mt-6">A 3rd-year <span className='text normal font-medium chip'>Computer Science</span> student, aspiring software engineer.
+                    Building clean <span className='text normal font-medium chip'>&lt;/&gt; full-stack</span> platforms, bridging frontier <span className='text normal font-medium chip'>AI</span> models with agentic tooling,
                     and architecting normalized relational backends.
                 </p>
                 <p className='text normal text-justify mt-2'>Constantly learning and improving through hands-on development.</p>

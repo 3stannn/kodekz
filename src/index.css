@@ -266,13 +266,11 @@ a {
 
 .role {
   font-family: "Geist Pixel", sans-serif;
-  font-weight: 600;
   color: #1d1d1d;
 }
 
 .text {
   font-size: 14px;
-  font-weight: 400;
   color: #737373;
 }
 
@@ -590,4 +588,11 @@ a:focus-visible .link-arrow {
   opacity: 0;
   pointer-events: none;
   box-shadow: 0 6px 18px rgb(18 18 21 / 12%);
+}
+
+.chip {
+  border-radius: 16px;
+  padding: 4px 8px;
+  background-color: #e4e4e4;
+  color: #1d1d1d;
 }

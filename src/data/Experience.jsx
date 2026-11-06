@@ -12,6 +12,15 @@ function Experience() {
             <div className="card thin flex flex-col sm:flex-row sm:items-center sm:justify-between py-2 sm:py-1 gap-1 sm:gap-4">
                 <div className="flex items-baseline justify-between sm:justify-start sm:gap-12">
                     <p className="text text-xs sm:text-sm shrink-0 sm:w-28">
+                        2026 - Present
+                    </p>
+                    <h1 className="text-heavy normal text-sm sm:text-base">AWSLC - Tech Officer</h1>
+                </div>
+                <p className="text text-xs sm:text-sm sm:text-right">AWS Learning Club</p>
+            </div>
+            <div className="card thin bottom flex flex-col sm:flex-row sm:items-center sm:justify-between py-2 sm:py-1 gap-1 sm:gap-4">
+                <div className="flex items-baseline justify-between sm:justify-start sm:gap-12">
+                    <p className="text text-xs sm:text-sm shrink-0 sm:w-28">
                         2024 - Present
                     </p>
                     <h1 className="text-heavy normal text-sm sm:text-base">Web Developer</h1>

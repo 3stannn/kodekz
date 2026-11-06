@@ -19,6 +19,19 @@ function Experiences() {
             <div className="card flex flex-row justify-between">
                 <div>
                     <h1 className="text-heavy">
+                        AWS Learning Club Genesis - Tech Team
+                    </h1>
+                    <p className="text">
+                        Tarlac State University | College of Computer Studies
+                    </p>
+                </div>
+                <div>
+                    <p className="text text-right">2026 - Present</p>
+                </div>
+            </div>
+            <div className="card bottom flex flex-row justify-between">
+                <div>
+                    <h1 className="text-heavy">
                         Programmer's Den – Finance Team | Graphic Designer
                     </h1>
                     <p className="text">
