@@ -51,6 +51,16 @@ function Certificates() {
                     />
                 </div>
             </div>
+            <div className="mt-10">
+                <p className="text mb-4">Backend & Database</p>
+                <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
+                    <Certificate
+                        certName="Relational Model to Document Model"
+                        certProvider="MongoDB"
+                        link="https://www.credly.com/badges/bafb3311-e2b4-4829-8835-98328523e015/public_url"
+                    />
+                </div>
+            </div>
         </div>
     );
 }
