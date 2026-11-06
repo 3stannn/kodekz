@@ -41,7 +41,7 @@ function Contacts() {
                     <h1 className="text-2xl font-medium tracking-tight">
                         Get in Touch
                     </h1>
-                    <p className="text mt-8 max-w-xl">Have an opportunity, a project in mind, or just want to connect? Reach out anytime.</p>
+                    <p className="text normal mt-8 max-w-xl">Have an opportunity, a project in mind, or just want to connect? Reach out anytime.</p>
                     <div className="mt-2 flex flex-row items-center gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

@@ -7,7 +7,7 @@ function Projects() {
                 <div>
                     <p className="text mb-2">02 — projects</p>
                     <h1 className="text-2xl font-medium tracking-tight">Projects </h1>
-                    <p className="text mt-8 max-w-xl">
+                    <p className="text normal mt-8 max-w-xl">
                         Systems I've built for clients, and the things I build for myself.
                     </p>
                 </div>

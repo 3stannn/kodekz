@@ -7,7 +7,7 @@ function Experiences() {
                 <div>
                     <p className="text mb-2">01 — experience</p>
                     <h1 className="text-2xl font-medium tracking-tight">Experience</h1>
-                    <p className="text mt-8 max-w-xl">
+                    <p className="text normal mt-8 max-w-xl">
                         Taking client projects from initial wireframe to live, deployed
                         product.
                     </p>
