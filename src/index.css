@@ -312,7 +312,7 @@ a {
   margin-inline-start: 0.2em;
   font-family: ui-monospace, monospace;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1;
   vertical-align: 0.05em;
   opacity: 0.75;
@@ -519,7 +519,8 @@ a:focus-visible .link-arrow {
 }
 
 .mascot {
-  --color-accent: #93b4e8;
+  position: relative;
+  --color-accent: #6D93DB;
   display: block;
   flex-shrink: 0;
   padding: 0;
@@ -545,6 +546,19 @@ a:focus-visible .link-arrow {
   width: 100%;
   height: 100%;
   transform-origin: center 85%;
+}
+
+.mascot-snooze {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mascot-eyes {
