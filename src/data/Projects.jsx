@@ -7,7 +7,10 @@ function Projects() {
                 <div className="flex flex-row justify-between mb-4">
                     <h1 className="text">02 — projects</h1>
                     <Link className="text tab" to="/projects">
-                        view all <span className="link-arrow" aria-hidden="true">&#8594;</span>
+                        view all{" "}
+                        <span className="link-arrow" aria-hidden="true">
+                            &#8594;
+                        </span>
                     </Link>
                 </div>
                 <a target="_blank" href="https://usekip.vercel.app/">
@@ -16,7 +19,10 @@ function Projects() {
                             <h1 className="text-heavy normal">
                                 Kip - AI Coding Agent Orchestrator
                             </h1>
-                            <p className="text">Developer</p>
+                            <p className="text">
+                                AI orchestration utility that prevents low-quality AI code
+                                generation
+                            </p>
                         </div>
                         <div>
                             <p className="text text-right">Dev Tool</p>
@@ -29,7 +35,10 @@ function Projects() {
                             <h1 className="text-heavy normal">
                                 InstaFrame — Webpage Studio & Responsive Viewports
                             </h1>
-                            <p className="text">Full-Stack Developer</p>
+                            <p className="text">
+                                A web tool to preview responsive websites across devices and
+                                capture realistic mockups.
+                            </p>
                         </div>
                         <div>
                             <p className="text text-right">Dev Tool</p>
@@ -39,8 +48,12 @@ function Projects() {
                 <a target="_blank" href="https://schedy-sepia.vercel.app/">
                     <div className="card bottom flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy normal">Schedy — Shared Workspace Calendar</h1>
-                            <p className="text">Full-Stack Developer</p>
+                            <h1 className="text-heavy normal">
+                                Schedy — Shared Workspace Calendar
+                            </h1>
+                            <p className="text">
+                                A minimalist shared workspace and productivity
+                            </p>
                         </div>
                         <div>
                             <p className="text text-right">Web App</p>

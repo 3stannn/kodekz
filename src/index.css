@@ -227,14 +227,13 @@ body.mobile-menu-active {
 }
 
 .navigation {
-  padding: 8px;
+  padding: 8px 0;
 }
 
 .navigation:hover {
-  background-color: #e4e4e4;
-  font-weight: 800;
+  font-weight: 600;
   color: #1d1d1d;
-   border-radius: 8px;
+  border-radius: 8px;
 }
 
 .nav-btn {

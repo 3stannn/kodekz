@@ -330,7 +330,7 @@ function Navbar() {
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
-                                    className="text small navigation flex items-center gap-3"
+                                    className="text small navigation flex items-center gap-2"
                                     to={link.to}
                                 >
                                     {link.icon}
