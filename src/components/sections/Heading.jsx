@@ -42,16 +42,17 @@ function Hero() {
                     <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">AI</span> models with
                     agentic tooling, and architecting normalized relational backends.
                 </p>
-                <p className="text normal text-justify mt-2">
-                    Constantly learning and improving through hands-on development.
-                </p>
-                <div className="flex flex-row gap-8 mt-6 justify-between">
-                    <a className="text button" target="_blank" href={resume}>
+                <div className="flex flex-row items-center justify-between gap-3 sm:gap-8 mt-6">
+                    <a
+                        className="text button whitespace-nowrap"
+                        target="_blank"
+                        href={resume}
+                    >
                         Download CV
                     </a>
-                    <div className="flex flex-row gap-8">
+                    <div className="flex flex-row items-center gap-3 sm:gap-8">
                         <a
-                            className="text link"
+                            className="text link whitespace-nowrap"
                             target="_blank"
                             href="https://github.com/3stannn"
                         >
@@ -61,7 +62,7 @@ function Hero() {
                             </span>
                         </a>
                         <a
-                            className="text link"
+                            className="text link whitespace-nowrap"
                             target="_blank"
                             href="https://www.linkedin.com/in/kodekz01"
                         >

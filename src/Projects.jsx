@@ -7,7 +7,7 @@ function Projects() {
                 <div>
                     <p className="text mb-2">02 — projects</p>
                     <h1 className="text-2xl font-medium tracking-tight">Projects </h1>
-                    <p className="text normal mt-8 max-w-xl">
+                    <p className="text normal mt-4 max-w-xl">
                         Systems I've built for clients, and the things I build for myself.
                     </p>
                 </div>
@@ -19,7 +19,7 @@ function Projects() {
                 <div className="card flex flex-col justify-between gap-4">
                     <div className="flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy link-title">Kip - AI Coding Agent Orchestrator</h1>
+                            <h1 className="text-heavy normal link-title">Kip - AI Coding Agent Orchestrator</h1>
                         </div>
                         <div>
                             <p className="text text-right">Dev Tool</p>
@@ -41,7 +41,7 @@ function Projects() {
                 <div className="card bottom flex flex-col justify-between gap-4">
                     <div className="flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy link-title">Simply Slate Theme</h1>
+                            <h1 className="text-heavy normal link-title">Simply Slate Theme</h1>
                         </div>
                         <div>
                             <p className="text text-right">VS Code</p>
@@ -61,7 +61,7 @@ function Projects() {
                 <div className="card bottom flex flex-col justify-between gap-4">
                     <div className="flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy link-title">
+                            <h1 className="text-heavy normal link-title">
                                 InstaFrame — Webpage Studio & Responsive Viewports
                             </h1>
                         </div>
@@ -84,7 +84,7 @@ function Projects() {
                 <div className="card bottom flex flex-col justify-between gap-4">
                     <div className="flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy link-title">
+                            <h1 className="text-heavy normal link-title">
                                 Schedy — Shared Workspace and Calendar
                             </h1>
                         </div>
@@ -106,7 +106,7 @@ function Projects() {
                 <div className="card bottom flex flex-col justify-between gap-4">
                     <div className="flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy link-title">Expense Tracker</h1>
+                            <h1 className="text-heavy normal link-title">Expense Tracker</h1>
                         </div>
                         <div>
                             <p className="text text-right">Web App</p>
@@ -124,7 +124,7 @@ function Projects() {
                 <div className="card bottom flex flex-col justify-between gap-4">
                     <div className="flex flex-row justify-between">
                         <div>
-                            <h1 className="text-heavy link-title">Tyto — Payment Ledger System</h1>
+                            <h1 className="text-heavy normal link-title">Tyto — Payment Ledger System</h1>
                         </div>
                         <div>
                             <p className="text text-right">Application</p>

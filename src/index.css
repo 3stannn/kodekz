@@ -269,7 +269,7 @@ a {
 }
 
 .text {
-  font-size: 14px;
+  font-size: 16px;
   color: #737373;
 }
 
@@ -277,12 +277,13 @@ a {
   font-family: "Geist", sans-serif;
 }
 
-.text.small {
+.text.small,
+.small {
   font-size: 12px;
 }
 
 .text-heavy {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #1d1d1d;
 }
@@ -292,6 +293,10 @@ a {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   background-color: #1d1d1d;
   padding: 4px 8px;
 }
@@ -301,6 +306,9 @@ a {
 }
 
 .link {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
   padding: 4px;
 }
 
@@ -450,11 +458,47 @@ a:focus-visible .link-arrow {
 
 .email {
   text-decoration: underline;
-   color: #1d1d1d;
+  color: #1d1d1d;
 }
 
 .email:hover {
   font-weight: 600;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1d1d1d;
+  font-size: 12px;
+  line-height: 1.4;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.email-link svg {
+  flex-shrink: 0;
+  color: #1d1d1d;
+}
+
+.email-link .email-text {
+  text-decoration: underline;
+  color: #1d1d1d;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: font-weight 150ms ease;
+}
+
+.email-link:hover .email-text {
+  font-weight: 600;
+}
+
+.email-link:focus-visible {
+  outline: 2px solid #1d1d1d;
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .proj-card {
@@ -598,4 +642,14 @@ a:focus-visible .link-arrow {
   padding: 4px 8px;
   background-color: #e4e4e4;
   color: #1d1d1d;
+}
+
+.service-card {
+  border: 1px solid #e4e4e4;
+  padding: 16px;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.service-card:hover {
+  background-color: #e4e4e4;
 }

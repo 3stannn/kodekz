@@ -56,7 +56,7 @@ function Stacks() {
                     <h1 className="text-2xl font-medium tracking-tight">
                         Tools I work with
                     </h1>
-                    <p className="text normal mt-8 max-w-xl">
+                    <p className="text normal mt-4 max-w-xl">
                         Technologies I use to design, build, and ship web applications.
                     </p>
                 </div>
