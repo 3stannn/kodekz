@@ -58,9 +58,7 @@ function Services() {
                     <div className="service-card flex flex-col gap-2 h-full">
                         <span className="text-heavy normal">Automation</span>
                         <span className="text normal">
-                            Tailored dashboards and client management systems built to
-                            streamline your exact business workflow—without the bloat of
-                            off-the-shelf software.
+                            Eliminating repetitive tasks with smart, automated workflows.
                         </span>
                     </div>
                 </div>
