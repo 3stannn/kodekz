@@ -24,7 +24,17 @@ function Services() {
             <div>
                 <div className="card flex flex-row items-center gap-2">
                     <span className="text">Currently working: </span>
-                    <span className="chip">Freelance</span>
+                    <span className="chip flex flex-row items-center gap-2">
+                        <svg
+                            width={8}
+                            height={8}
+                            viewBox="0 0 24 24"
+                            aria-label="Available"
+                        >
+                            <circle cx="12" cy="12" r="10" fill="#22c55e" />
+                        </svg>
+                        Freelance
+                    </span>
                 </div>
             </div>
             <div className="mt-10">
@@ -71,7 +81,10 @@ function Services() {
                     >
                         <path d="M5 4H19C20.6569 4 22 5.34315 22 7V17C22 18.6569 20.6569 20 19 20H5C3.34315 20 2 18.6569 2 17V7C2 5.34315 3.34315 4 5 4ZM2 7L11.2929 11C11.7154 11.2817 12.2846 11.2817 12.7071 11L22 7" />
                     </svg>
-                    <a className="text-heavy email" href="mailto:thristandave12@gmail.com">
+                    <a
+                        className="text-heavy email"
+                        href="mailto:thristandave12@gmail.com"
+                    >
                         thristandave12@gmail.com
                     </a>
                 </div>
