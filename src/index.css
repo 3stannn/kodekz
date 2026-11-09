@@ -469,29 +469,37 @@ a:focus-visible .link-arrow {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #1d1d1d;
+  color: #737373;
   font-size: 12px;
   line-height: 1.4;
   text-decoration: none;
   max-width: 100%;
+  transition: color 150ms ease;
 }
 
 .email-link svg {
   flex-shrink: 0;
-  color: #1d1d1d;
+  color: inherit;
+  transition: color 150ms ease;
 }
 
 .email-link .email-text {
   text-decoration: underline;
-  color: #1d1d1d;
+  color: inherit;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: font-weight 150ms ease;
+  transition: color 150ms ease, font-weight 150ms ease;
 }
 
-.email-link:hover .email-text {
+.email-link:hover,
+.email-link:focus-visible {
+  color: #1d1d1d;
+}
+
+.email-link:hover .email-text,
+.email-link:focus-visible .email-text {
   font-weight: 600;
 }
 

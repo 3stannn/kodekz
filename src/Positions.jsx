@@ -1,4 +1,3 @@
-
 const experiences = [
   {
     company: "AWS Learning Club - Genesis",
@@ -6,9 +5,18 @@ const experiences = [
     employment: "Organization Officer",
     location: "Tarlac State University",
     positions: [
+      // {
+      //   title: "Tech Officer",
+      //   date: "Nov 2026 - Present · 1 month",
+      //   description: [
+      //     "Co-founded the AWS Learning Club – TSU Chapter, establishing the organization’s foundational community and student engagement.",
+      //   ],
+      //   skills: ["Cloud Computing", "AWS"],
+      //   // extraSkills: 2,
+      // },
       {
         title: "Tech Officer",
-        date: "NOV 2026 - PRESENT · 1 month",
+        date: "Nov 2026 - Present · 1 month",
         description: [
           "Co-founded the AWS Learning Club – TSU Chapter, establishing the organization’s foundational community and student engagement.",
         ],
@@ -29,7 +37,8 @@ const experiences = [
         description: [
           "Managed budget allocation, fund tracking, and financial documentation for organization initiatives while designing promotional graphics, publication materials, and visual branding for programming workshops and competitions.",
         ],
-        skills: ["Graphic Design", "Budgeting", "Branding"],
+        skills: ["Budgeting", "Branding"],
+        extraSkills: [1],
       },
     ],
   },
@@ -45,7 +54,40 @@ const experiences = [
         description: [
           "Created official publication materials, event banners, and social media collaterals for college-wide tech seminars, assemblies, and student campaigns, maintaining a consistent and engaging visual brand identity.",
         ],
-        skills: ["Graphic Design", "Brand Identity", "Visual Design"],
+        skills: ["Brand Identity", "Visual Design"],
+        extraSkills: [1],
+      },
+    ],
+  },
+  {
+    company: "Web Developer",
+    initials: "W",
+    employment: "Freelance",
+    location: "Remote",
+    positions: [
+      {
+        title: "",
+        date: "2024 - Present",
+        description: [
+          "Build responsive websites and web applications from concept to deployment, focusing on clear interfaces, reliable functionality, and performant user experiences.",
+        ],
+        skills: ["Web Development", "React", "Responsive Design"],
+      },
+    ],
+  },
+  {
+    company: "Graphic Designer",
+    initials: "G",
+    employment: "Freelance",
+    location: "Remote",
+    positions: [
+      {
+        title: "",
+        date: "2022 - Present",
+        description: [
+          "Create visual identities, social media assets, and marketing materials that communicate ideas clearly across digital and print touchpoints.",
+        ],
+        skills: ["Brand Identity", "Marketing Design", "Visual Design"],
       },
     ],
   },
@@ -53,20 +95,16 @@ const experiences = [
 
 function Positions() {
   return (
-    <section className="mx-auto max-w-3xl px-4 pb-8 text-neutral-900">
-
+    <section className="mx-auto max-w-3xl px-4 text-neutral-900">
       {/* Experience timeline */}
       <div className="space-y-12">
-
         {experiences.map((company, index) => (
           <div key={company.company} className="relative flex gap-5">
-
             {/* Company logo and timeline */}
             <div className="relative flex w-12 shrink-0 justify-center">
-
               {/* Vertical company timeline */}
               {index !== experiences.length - 1 && (
-                <div className="absolute left-1/2 top-14 h-[calc(100%+3rem)] w-px -translate-x-1/2 bg-neutral-200" />
+                <div className="absolute left-1/2 top-12 h-[calc(100%+3rem)] w-px -translate-x-1/2 bg-neutral-200" />
               )}
 
               {/* Company logo */}
@@ -77,36 +115,27 @@ function Positions() {
 
             {/* Company details */}
             <div className="min-w-0 flex-1">
+              <h3 className="text-heavy normal">{company.company}</h3>
 
-              <h3 className="text-heavy normal">
-                {company.company}
-              </h3>
-
-              <p className="mt-1 text">
-                {company.employment}
-              </p>
+              <p className="mt-1 text">{company.employment}</p>
 
               {company.location && (
-                <p className="mt-1 text small">
-                  {company.location}
-                </p>
+                <p className="mt-1 text small">{company.location}</p>
               )}
 
               {/* Positions */}
-              <div className="mt-6 space-y-8">
+              <div className="mt-6 ml-6 space-y-8">
                 {company.positions.map((position, i) => (
                   <div key={position.title} className="relative">
-
                     {/* Position timeline */}
+                    {i !== company.positions.length - 1 && (
+                      <div className="absolute -left-5.25 top-2.5 h-[calc(100%+2rem)] w-px bg-neutral-200" />
+                    )}
                     <div className="absolute -left-6.25 top-1.5 h-2 w-2 rounded-full border border-neutral-300 bg-white" />
 
-                    <h4 className="text-heavy">
-                      {position.title}
-                    </h4>
+                    <h4 className="text-heavy">{position.title}</h4>
 
-                    <p className="mt-2 text small">
-                      {position.date}
-                    </p>
+                    <p className="mt-2 text small">{position.date}</p>
 
                     {/* Description */}
                     <div className="mt-4 text">
@@ -118,10 +147,7 @@ function Positions() {
                     {/* Skills */}
                     <div className="mt-4 flex flex-wrap items-center gap-2">
                       {position.skills.slice(0, 2).map((skill) => (
-                        <span
-                          key={skill}
-                          className="stack text small normal"
-                        >
+                        <span key={skill} className="stack text small normal">
                           {skill}
                         </span>
                       ))}
@@ -135,22 +161,17 @@ function Positions() {
                       {position.skills.length > 2 &&
                         !position.extraSkills &&
                         position.skills.slice(2).map((skill) => (
-                          <span
-                            key={skill}
-                            className="stack text small normal"
-                          >
+                          <span key={skill} className="stack text small normal">
                             {skill}
                           </span>
                         ))}
                     </div>
-
                   </div>
                 ))}
               </div>
             </div>
           </div>
         ))}
-
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ function Services() {
                         >
                             <circle cx="12" cy="12" r="10" fill="#22c55e" />
                         </svg>
-                        Freelance
+                        <span className="text normal">Freelance</span>
                     </span>
                 </div>
             </div>

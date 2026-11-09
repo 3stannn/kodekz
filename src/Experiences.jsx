@@ -18,24 +18,6 @@ function Experiences() {
                 </Link>
             </div>
             <Positions/>
-            <div className="card flex flex-row justify-between">
-                <div>
-                    <h1 className="text-heavy normal">Web Developer</h1>
-                    <p className="text">Freelance</p>
-                </div>
-                <div>
-                    <p className="text text-right whitespace-nowrap">2024 - Present</p>
-                </div>
-            </div>
-            <div className="card bottom flex flex-row justify-between">
-                <div>
-                    <h1 className="text-heavy normal">Graphic Designer</h1>
-                    <p className="text">Freelace</p>
-                </div>
-                <div>
-                    <p className="text text-right whitespace-nowrap">2022 - Present</p>
-                </div>
-            </div>
         </div>
     );
 }
