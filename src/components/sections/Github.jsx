@@ -32,7 +32,7 @@ export default function GitHubCalendarWidget() {
     return (
         <div
             ref={calendarRef}
-            className="github-calendar max-w-3xl mx-auto px-6 mt-12"
+            className="github-calendar max-w-3xl mx-auto px-6 mt-16"
         >
             <div className="flex flex-row justify-between mb-6">
                 <h1 className="text">06 — github</h1>

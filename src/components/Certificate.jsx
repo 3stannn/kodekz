@@ -1,7 +1,7 @@
 function Certificate(props) {
     return (
         <div className="h-full">
-            <div className="outer-card h-full">
+            <div className="outer-card h-full shadow-lg">
                 <a className="block h-full" target="_blank" href={props.link}>
                     <div className="inner-card flex h-full flex-col items-center justify-center p-4 text-center">
                         <h1 className="text-heavy normal">{props.certName}</h1>
