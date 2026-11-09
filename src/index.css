@@ -54,7 +54,7 @@ body.mobile-menu-active {
   justify-content: space-between;
   width: 248px;
   height: 100dvh;
-  padding: 16px 8px;
+  padding: 8px 8px;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #f3f3f3;
@@ -457,59 +457,16 @@ a:focus-visible .link-arrow {
 }
 
 .email {
-  text-decoration: underline;
   color: #1d1d1d;
 }
 
 .email:hover {
   font-weight: 600;
-}
-
-.email-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #737373;
-  font-size: 12px;
-  line-height: 1.4;
-  text-decoration: none;
-  max-width: 100%;
-  transition: color 150ms ease;
-}
-
-.email-link svg {
-  flex-shrink: 0;
-  color: inherit;
-  transition: color 150ms ease;
-}
-
-.email-link .email-text {
   text-decoration: underline;
-  color: inherit;
-  font-size: 14px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: color 150ms ease, font-weight 150ms ease;
+  text-underline-offset: 4px;
 }
 
-.email-link:hover,
-.email-link:focus-visible {
-  color: #1d1d1d;
-}
-
-.email-link:hover .email-text,
-.email-link:focus-visible .email-text {
-  font-weight: 600;
-}
-
-.email-link:focus-visible {
-  outline: 2px solid #1d1d1d;
-  outline-offset: 4px;
-  border-radius: 4px;
-}
-
-.proj-card {
+.kip-card {
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -523,18 +480,18 @@ a:focus-visible .link-arrow {
   background-color: #F3F3F3;
 }
 
-.proj-card:hover a {
+.kip-card:hover a {
   text-decoration: underline;
 }
 
-.proj-card__background {
+.kip-card__background {
   position: absolute;
   inset: 0;
   z-index: -1;
   pointer-events: none;
 }
 
-.proj-card__background::after {
+.kip-card__background::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -546,28 +503,28 @@ a:focus-visible .link-arrow {
   );
 }
 
-.proj-card__copy {
+.kip-card__copy {
   min-width: 0;
 }
 
-.proj-card a:hover {
+.kip-card a:hover {
   text-decoration: underline;
 }
 
-.proj-card .text {
+.kip-card .text {
   color: #172d48;
 }
 
-.proj-card__copy b {
+.kip-card__copy b {
   color: #0b1c32;
 }
 
-.proj-card a:focus-visible {
+.kip-card a:focus-visible {
   outline: 2px solid #172d48;
   outline-offset: 4px;
 }
 
-.proj-card .mascot-head {
+.kip-card .mascot-head {
   filter: drop-shadow(0 3px 5px rgb(23 45 72 / 16%));
 }
 

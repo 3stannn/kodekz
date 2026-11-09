@@ -61,7 +61,7 @@ const experiences = [
   },
   {
     company: "Web Developer",
-    initials: "W",
+    initials: "WD",
     employment: "Freelance",
     location: "Remote",
     positions: [
@@ -77,7 +77,7 @@ const experiences = [
   },
   {
     company: "Graphic Designer",
-    initials: "G",
+    initials: "GD",
     employment: "Freelance",
     location: "Remote",
     positions: [

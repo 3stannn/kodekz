@@ -74,8 +74,8 @@ function Hero() {
                     </div>
                 </div>
                 <div className="mt-6">
-                    <div className="proj-card">
-                        <div className="proj-card__background" aria-hidden="true">
+                    <div className="kip-card">
+                        <div className="kip-card__background" aria-hidden="true">
                             <GradientASCII
                                 colors={kipColors}
                                 shape="horizon"
@@ -84,7 +84,7 @@ function Hero() {
                                 density={0.8}
                             />
                         </div>
-                        <div className="proj-card__copy flex flex-col">
+                        <div className="kip-card__copy flex flex-col">
                             <span className="text normal">
                                 <b>AI Coding Agent Orchestration</b>
                             </span>
