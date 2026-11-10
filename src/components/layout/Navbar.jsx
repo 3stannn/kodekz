@@ -113,6 +113,25 @@ const navLinks = [
         ),
     },
     {
+        label: "Resources",
+        to: "/resources",
+        icon: (
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path d="M14 2H8C5.79086 2 4 3.79086 4 6V18C4 20.2091 5.79086 22 8 22H16C18.2091 22 20 20.2091 20 18V8L14 2ZM14 2V5C14 6.65685 15.3431 8 17 8H20M8 13H12M8 17H16" />
+            </svg>
+        ),
+    },
+    {
         label: "Contact",
         to: "/contacts",
         icon: (
@@ -263,9 +282,7 @@ function Navbar() {
                         </div>
                     </div>
 
-                    <div className="mobile-menu__footer pl-4 pr-4">
-                        
-                    </div>
+                    <div className="mobile-menu__footer pl-4 pr-4"></div>
                 </div>
             </nav>
 
@@ -316,9 +333,7 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className="desktop-nav__footer mb-2 pl-4 pr-4">
-                    
-                </div>
+                <div className="desktop-nav__footer mb-2 pl-4 pr-4"></div>
             </nav>
         </header>
     );

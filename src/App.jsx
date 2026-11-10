@@ -13,6 +13,7 @@ import Experiences from "./Experiences";
 import Certificates from "./Certificates";
 import Projects from "./Projects";
 import Services from "./Services";
+import Resources from "./Resources";
 import Contacts from "./Contacts";
 import { Toaster } from '@yusufceng1z/ding-react';
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/certificates" element={<Certificates />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/services" element={<Services />}></Route>
+          <Route path="/resources" element={<Resources />}></Route>
           <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
         <Footer />
