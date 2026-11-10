@@ -49,10 +49,11 @@ function Contacts() {
         <div className="mx-auto mt-12 max-w-3xl px-6">
             <div className="mb-10 flex items-start justify-between gap-6">
                 <div>
-                    <h1 className="text-2xl font-medium tracking-tight">
-                        Get in Touch
-                    </h1>
-                    <p className="text normal mt-4 max-w-xl">Have an opportunity, a project in mind, or just want to connect? Reach out anytime.</p>
+                    <h1 className="text-2xl font-medium tracking-tight">Get in Touch</h1>
+                    <p className="text normal mt-4 max-w-xl">
+                        Have an opportunity, a project in mind, or just want to connect?
+                        Reach out anytime.
+                    </p>
                     <div className="mt-2 flex flex-row items-center gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -76,22 +77,22 @@ function Contacts() {
                         </a>
                     </div>
                     <a
-                            className="text button whitespace-nowrap mt-4"
-                            onClick={() => toast.success("On the Works ;)")}
-                        >
-                            Send a Message
-                        </a>
+                        className="text button whitespace-nowrap mt-4"
+                        onClick={() => toast.success("On the Works ;)")}
+                    >
+                        Send a Message
+                    </a>
                 </div>
                 <Link className="text tab whitespace-nowrap" to="/">
-                    <span className="link-arrow link-arrow--back" aria-hidden="true">&#8592;</span> back home
+                    <span className="link-arrow link-arrow--back" aria-hidden="true">
+                        &#8592;
+                    </span>{" "}
+                    back home
                 </Link>
             </div>
             <div>
                 {contactGroups.map((group, index) => (
-                    <section
-                        key={group.title}
-                        className={index > 0 ? "mt-10" : ""}
-                    >
+                    <section key={group.title} className={index > 0 ? "mt-10" : ""}>
                         <p className="text">{group.title}</p>
 
                         <div className="links-container mt-4">
@@ -102,12 +103,24 @@ function Contacts() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <div className={contactIndex > 0 ? "card bottom flex flex-row items-center justify-between" : "card flex flex-row items-center justify-between"}>
+                                    <div
+                                        className={
+                                            contactIndex > 0
+                                                ? "card bottom flex flex-row items-center justify-between"
+                                                : "card flex flex-row items-center justify-between"
+                                        }
+                                    >
                                         <div>
-                                            <p className="text-heavy normal link-title">{contact.name}</p>
+                                            <p className="text-heavy normal link-title">
+                                                {contact.name}
+                                            </p>
                                             <p className="text">@{contact.username}</p>
                                         </div>
-                                        <p className="text link"><span className="link-arrow" aria-hidden="true">&#8599;</span></p>
+                                        <p className="text link">
+                                            <span className="link-arrow" aria-hidden="true">
+                                                &#8599;
+                                            </span>
+                                        </p>
                                     </div>
                                 </a>
                             ))}
@@ -116,6 +129,6 @@ function Contacts() {
                 ))}
             </div>
         </div>
-    )
+    );
 }
-export default Contacts
+export default Contacts;
