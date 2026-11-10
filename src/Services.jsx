@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
+import { toast } from "@yusufceng1z/ding-react";
 
 function Services() {
+    const handleCopyEmail = async (e) => {
+        e.preventDefault();
+        try {
+            await navigator.clipboard.writeText("thristandave12@gmail.com");
+            toast.success("Email copied to clipboard!");
+        } catch {
+            toast.error("Failed to copy email");
+        }
+    };
+
     return (
         <div className="mx-auto mt-12 max-w-3xl px-6">
             <div className="mb-10 flex items-start justify-between gap-6">
@@ -82,6 +93,7 @@ function Services() {
                     <a
                         className="text email"
                         href="mailto:thristandave12@gmail.com"
+                        onClick={handleCopyEmail}
                     >
                         thristandave12@gmail.com
                     </a>

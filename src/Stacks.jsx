@@ -71,7 +71,7 @@ function Stacks() {
                         key={group.title}
                         className="grid gap-4 border-b border-[#e4e4e4] py-7 sm:grid-cols-[9rem_1fr]"
                     >
-                        <h2 className="text-heavy">{group.title}</h2>
+                        <h2 className="text">{group.title}</h2>
                         <div className="flex flex-wrap gap-2">
                             {group.technologies.map((technology) => (
                                 <span key={technology} className="stack text normal">

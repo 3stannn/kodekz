@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { toast } from "@yusufceng1z/ding-react";
 
 const contactGroups = [
     {
@@ -34,6 +35,16 @@ const contactGroups = [
 ];
 
 function Contacts() {
+    const handleCopyEmail = async (e) => {
+        e.preventDefault();
+        try {
+            await navigator.clipboard.writeText("thristandave12@gmail.com");
+            toast.success("Email copied to clipboard!");
+        } catch {
+            toast.error("Failed to copy email");
+        }
+    };
+    
     return (
         <div className="mx-auto mt-12 max-w-3xl px-6">
             <div className="mb-10 flex items-start justify-between gap-6">
@@ -56,7 +67,11 @@ function Contacts() {
                         >
                             <path d="M5 4H19C20.6569 4 22 5.34315 22 7V17C22 18.6569 20.6569 20 19 20H5C3.34315 20 2 18.6569 2 17V7C2 5.34315 3.34315 4 5 4ZM2 7L11.2929 11C11.7154 11.2817 12.2846 11.2817 12.7071 11L22 7" />
                         </svg>
-                        <a className="text email" href="mailto:thristandave12@gmail.com">
+                        <a 
+                            className="text email"
+                            href="mailto:thristandave12@gmail.com"
+                            onClick={handleCopyEmail}
+                        >
                             thristandave12@gmail.com
                         </a>
                     </div>

@@ -14,6 +14,7 @@ import Certificates from "./Certificates";
 import Projects from "./Projects";
 import Services from "./Services";
 import Contacts from "./Contacts";
+import { Toaster } from '@yusufceng1z/ding-react';
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
 function App() {
   return (
     <>
+      <Toaster position="top-center" theme="system" />
       <Navbar />
       <div className="page-shell">
         <Routes>

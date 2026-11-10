@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { toast } from "@yusufceng1z/ding-react";
 import resume from "../../assets/resume.pdf";
 import devpfp from "../../assets/dev.png";
 import { Mascot } from "../Mascot";
@@ -47,6 +48,7 @@ function Hero() {
                         className="text button whitespace-nowrap"
                         target="_blank"
                         href={resume}
+                        onClick={() => toast.success("Resume opened in a new tab")}
                     >
                         Download CV
                     </a>
