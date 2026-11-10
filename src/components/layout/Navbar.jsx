@@ -333,7 +333,9 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className="desktop-nav__footer mb-2 pl-4 pr-4"></div>
+                <div className="desktop-nav__footer mb-2 pl-4 pr-4">
+                    
+                </div>
             </nav>
         </header>
     );

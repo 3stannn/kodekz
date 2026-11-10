@@ -44,7 +44,7 @@ function Contacts() {
             toast.error("Failed to copy email");
         }
     };
-    
+
     return (
         <div className="mx-auto mt-12 max-w-3xl px-6">
             <div className="mb-10 flex items-start justify-between gap-6">
@@ -67,7 +67,7 @@ function Contacts() {
                         >
                             <path d="M5 4H19C20.6569 4 22 5.34315 22 7V17C22 18.6569 20.6569 20 19 20H5C3.34315 20 2 18.6569 2 17V7C2 5.34315 3.34315 4 5 4ZM2 7L11.2929 11C11.7154 11.2817 12.2846 11.2817 12.7071 11L22 7" />
                         </svg>
-                        <a 
+                        <a
                             className="text email"
                             href="mailto:thristandave12@gmail.com"
                             onClick={handleCopyEmail}
@@ -75,6 +75,12 @@ function Contacts() {
                             thristandave12@gmail.com
                         </a>
                     </div>
+                    <a
+                            className="text button whitespace-nowrap mt-4"
+                            onClick={() => toast.success("On the Works ;)")}
+                        >
+                            Send a Message
+                        </a>
                 </div>
                 <Link className="text tab whitespace-nowrap" to="/">
                     <span className="link-arrow link-arrow--back" aria-hidden="true">&#8592;</span> back home
