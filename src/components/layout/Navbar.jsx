@@ -270,7 +270,7 @@ function Navbar() {
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
-                                    className="text small navigation flex items-center gap-3"
+                                    className="text small navigation flex items-center gap-4"
                                     to={link.to}
                                     tabIndex={isMobileOpen ? 0 : -1}
                                     onClick={() => setIsMobileOpen(false)}
@@ -318,11 +318,11 @@ function Navbar() {
                             </svg>
                             <p className="text small">Available</p>
                         </div>
-                        <div className="mt-12 flex flex-col gap-1 pl-6 pr-4">
+                        <div className="mt-12 flex flex-col gap-2 pl-6 pr-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.label}
-                                    className="text small navigation flex items-center gap-2"
+                                    className="text small navigation flex items-center gap-4"
                                     to={link.to}
                                 >
                                     {link.icon}

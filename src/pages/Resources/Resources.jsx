@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "@yusufceng1z/ding-react";
-import portfolioSkill from "@/assets/files/test.txt";
+import portfolioSkill from "@/assets/files/SKILL.md?url";
 
-const ZIP_ICON = `data:image/svg+xml;utf8,${encodeURIComponent(
+const MD_ICON = `data:image/svg+xml;utf8,${encodeURIComponent(
     `
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
   <circle cx="16" cy="16" r="16" fill="#2b2d31"/>
-  <text x="16" y="16.5" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="10.5" letter-spacing="0.5">ZIP</text>
+  <text x="16" y="16.5" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="10.5" letter-spacing="0.5">MD</text>
 </svg>
 `.trim(),
 )}`;
@@ -31,7 +31,7 @@ function Resources() {
         }
 
         let progress = 0;
-        const fileName = "portfolio-skill.zip";
+        const fileName = "portfolio-skill.md";
 
         const cancelDownload = () => {
             if (downloadIntervalRef.current) {
@@ -43,7 +43,7 @@ function Resources() {
         const toastId = toast.info(fileName, {
             description: "Downloading · 0%",
             progress: 0,
-            image: ZIP_ICON,
+            image: MD_ICON,
             action: {
                 label: "Cancel",
                 onClick: () => {
@@ -86,7 +86,7 @@ function Resources() {
                 });
 
                 const link = document.createElement("a");
-                link.href = portfolioSkill || "/portfolio-skill.zip";
+                link.href = portfolioSkill;
                 link.download = fileName;
                 document.body.appendChild(link);
                 link.click();
@@ -136,6 +136,7 @@ function Resources() {
             <p className="text mb-4">Skills I use</p>
             <a
                 href={portfolioSkill}
+                download="portfolio-skill.md"
                 onClick={handleDownload}
                 className="cursor-pointer"
             >
