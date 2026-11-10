@@ -76,21 +76,44 @@ function Resources() {
                 progress = 100;
                 cancelDownload();
 
-                toast.update(toastId, {
-                    type: "success",
-                    title: fileName,
-                    description: "Download complete",
-                    progress: null,
-                    action: null,
-                    duration: 3500,
-                });
+                // The built file has a hashed name (SKILL-abc123.md). Saving it
+                // through a blob URL makes the browser use fileName instead.
+                fetch(portfolioSkill)
+                    .then((response) => {
+                        if (!response.ok) throw new Error(response.statusText);
+                        return response.blob();
+                    })
+                    .then((blob) => {
+                        const blobUrl = URL.createObjectURL(
+                            new Blob([blob], { type: "text/markdown" }),
+                        );
+                        const link = document.createElement("a");
+                        link.href = blobUrl;
+                        link.download = fileName;
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
 
-                const link = document.createElement("a");
-                link.href = portfolioSkill;
-                link.download = fileName;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                        toast.update(toastId, {
+                            type: "success",
+                            title: fileName,
+                            description: "Download complete",
+                            progress: null,
+                            action: null,
+                            duration: 3500,
+                        });
+                    })
+                    .catch(() => {
+                        toast.update(toastId, {
+                            type: "error",
+                            title: fileName,
+                            description: "Download failed",
+                            progress: null,
+                            action: null,
+                            duration: 3500,
+                        });
+                    });
             } else {
                 toast.update(toastId, {
                     description: `Downloading · ${progress}%`,
