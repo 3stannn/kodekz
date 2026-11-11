@@ -34,7 +34,7 @@ function Projects() {
                         <div className="proj-card-footer">
                             <a className="whitespace-nowrap" target="_blank" href="https://usekip.vercel.app/">
                                 <span className="text-heavy">
-                                    Check it out{" "}
+                                    <span className="small">Check it out</span>{" "}
                                     <span className="link-arrow" aria-hidden="true">
                                         &#8599;
                                     </span>
@@ -57,7 +57,7 @@ function Projects() {
                         <div className="proj-card-footer">
                             <a className="whitespace-nowrap" target="_blank" href="https://insta-frame-three.vercel.app/">
                                 <span className="text-heavy">
-                                    Check it out{" "}
+                                    <span className="small">Check it out</span>{" "}
                                     <span className="link-arrow" aria-hidden="true">
                                         &#8599;
                                     </span>
@@ -80,7 +80,7 @@ function Projects() {
                         <div className="proj-card-footer">
                             <a className="whitespace-nowrap" target="_blank" href="https://schedy-sepia.vercel.app/">
                                 <span className="text-heavy">
-                                    Check it out{" "}
+                                    <span className="small">Check it out</span>{" "}
                                     <span className="link-arrow" aria-hidden="true">
                                         &#8599;
                                     </span>

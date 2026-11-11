@@ -99,7 +99,7 @@ function Hero() {
                                 target="_blank"
                                 href="https://usekip.vercel.app/"
                             >
-                                <span className="text">
+                                <span className="text small">
                                     <b>
                                         Check it out{" "}
                                         <span className="link-arrow" aria-hidden="true">
