@@ -189,7 +189,7 @@ function Resources() {
                 <div className="card bottom mb-8">
                     <div className="flex flex-row justify-between items-center">
                         <div className="flex flex-col">
-                            <span className="text-heavy">
+                            <span className="text-heavy link-title">
                                 Kip - AI Coding Agent Orchestration
                             </span>
                             <span className="text">Open Source</span>
