@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import kipLogo from "@/assets/projects/kip.png";
-import instaFrameLogo from "@/assets/projects/instaframe.png";
-import schedyLogo from "@/assets/projects/schedy.png";
+import ProjectCarousel from "./ProjectCarousel";
 
 function Projects() {
     return (
-        <div className="mx-auto mt-12 max-w-3xl px-6">
-            <div className="mb-10 grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-6 gap-y-4">
+        <div className="mt-12">
+            <div className="mx-auto mb-10 grid max-w-3xl grid-cols-[minmax(0,1fr)_auto] items-start gap-x-6 gap-y-4 px-6">
                 <div>
                     <p className="text mb-2">02 — projects</p>
                     <h1 className="text-2xl font-medium tracking-tight">Projects </h1>
@@ -21,75 +19,8 @@ function Projects() {
                     Systems I've built for clients, and the things I build for myself.
                 </p>
             </div>
-            <div className="lg:px-10">
-                <div className="proj-card shadow-sm mb-6 sm:mb-8">
-                    <img src={kipLogo} alt="" />
-                    <div className="proj-card-content">
-                        <h2 className="link-title text-xl sm:text-2xl">Kip - AI Coding Agent Orchestration</h2>
-                        <p className="text">
-                            Kip is an easy-setup AI orchestration utility that prevents
-                            low-quality AI code generation, optimizing workflows for Codex,
-                            Claude Code, and Antigravity.
-                        </p>
-                        <div className="proj-card-footer">
-                            <a className="whitespace-nowrap" target="_blank" href="https://usekip.vercel.app/">
-                                <span className="text-heavy">
-                                    <span className="small">Check it out</span>{" "}
-                                    <span className="link-arrow" aria-hidden="true">
-                                        &#8599;
-                                    </span>
-                                </span>
-                            </a>
-                            <span className="text small">AI Dev Tool</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="proj-card shadow-sm mb-6 sm:mb-8">
-                    <img src={instaFrameLogo} alt="" />
-                    <div className="proj-card-content">
-                        <h2 className="link-title text-xl sm:text-2xl">InstaFrame — Webpage Studio & Responsive Viewports</h2>
-                        <p className="text normal">
-                            Eliminates the friction of manual browser resizing and third-party
-                            mockup tools. Provides live, multi-device viewport previews and
-                            converts active web tabs into studio-grade mockups in a single
-                            click.
-                        </p>
-                        <div className="proj-card-footer">
-                            <a className="whitespace-nowrap" target="_blank" href="https://insta-frame-three.vercel.app/">
-                                <span className="text-heavy">
-                                    <span className="small">Check it out</span>{" "}
-                                    <span className="link-arrow" aria-hidden="true">
-                                        &#8599;
-                                    </span>
-                                </span>
-                            </a>
-                            <span className="text small">Dev Tool</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="proj-card shadow-sm mb-6 sm:mb-8">
-                    <img src={schedyLogo} alt="" />
-                    <div className="proj-card-content">
-                        <h2 className="link-title text-xl sm:text-2xl">Schedy — Shared Workspace and Calendar</h2>
-                        <p className="text normal">
-                            Designed and engineered an intuitive shared workspace that pairs
-                            event scheduling with a central bulletin board. Built with
-                            responsive layouts and real-time state updates to keep teams
-                            aligned effortlessly.
-                        </p>
-                        <div className="proj-card-footer">
-                            <a className="whitespace-nowrap" target="_blank" href="https://schedy-sepia.vercel.app/">
-                                <span className="text-heavy">
-                                    <span className="small">Check it out</span>{" "}
-                                    <span className="link-arrow" aria-hidden="true">
-                                        &#8599;
-                                    </span>
-                                </span>
-                            </a>
-                            <span className="text small">Web App</span>
-                        </div>
-                    </div>
-                </div>
+            <ProjectCarousel />
+            <div className="mx-auto mt-10 max-w-3xl px-6 lg:px-16">
                 <a
                     target="_blank"
                     href="https://marketplace.visualstudio.com/items?itemName=kodekz01.simply-slate-theme"

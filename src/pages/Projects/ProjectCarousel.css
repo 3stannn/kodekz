@@ -1,0 +1,139 @@
+.project-carousel {
+  container-type: inline-size;
+}
+
+.project-carousel__viewport,
+.project-carousel__controls {
+  --inset: max(1.5rem, calc(24cqw - 7rem), calc((100cqw - 64rem) / 2));
+  padding-inline: var(--inset);
+}
+
+.project-carousel__viewport {
+  display: flex;
+  gap: clamp(0.75rem, 1.7cqw, 1.75rem);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.project-carousel__viewport--returning {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.project-carousel__slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.project-carousel__link {
+  display: block;
+}
+
+.project-carousel__frame {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem;
+  background: #e4e4e4;
+}
+
+.project-carousel__frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 320ms ease-out;
+}
+
+.project-carousel__link:focus-visible {
+  outline: none;
+}
+
+.project-carousel__link:focus-visible .project-carousel__frame {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+
+.project-carousel__caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-top: 0.75rem;
+}
+
+.project-carousel__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-carousel__link:is(:hover, :focus-visible) .project-carousel__title {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.project-carousel__type {
+  flex-shrink: 0;
+  font-size: 0.8125rem;
+  color: #626262;
+}
+
+.project-carousel__description {
+  max-width: 66ch;
+  margin-top: 0.35rem;
+  color: #626262;
+}
+
+.project-carousel__controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.project-carousel__controls button {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.project-carousel__controls button:not([aria-disabled="true"]):hover {
+  background: #e4e4e4;
+}
+
+.project-carousel__controls button[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.project-carousel__controls button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.project-carousel__announcement {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .project-carousel__frame:hover img {
+    transform: scale(1.045);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-carousel__viewport {
+    scroll-behavior: auto;
+  }
+}
