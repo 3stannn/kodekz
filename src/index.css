@@ -10,7 +10,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
   color: #1d1d1d;
 }
 
@@ -57,7 +57,7 @@ body.mobile-menu-active {
   padding: 8px 8px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
   opacity: 0;
   transform: translateX(-100%);
   visibility: hidden;
@@ -102,7 +102,7 @@ body.mobile-menu-active {
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid #e4e4e4;
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
   padding: 16px 8px;
   width: 248px;
   height: 100dvh;
@@ -204,7 +204,7 @@ body.mobile-menu-active {
 
 ::selection {
   background-color: #1d1d1d;
-  color: #f3f3f3;
+  color: #F3F3F3;
 }
 
 ::-webkit-scrollbar {
@@ -302,7 +302,7 @@ a {
 }
 
 .button:hover {
-  color: #f3f3f3;
+  color: #F3F3F3;
   cursor: pointer;
 }
 
@@ -422,7 +422,7 @@ a:focus-visible .link-arrow {
 }
 
 .outer-card {
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
   padding: 8px;
   min-height: 150px;
   border-radius: 16px;
@@ -618,4 +618,61 @@ a:focus-visible .link-arrow {
 
 .service-card:hover {
   background-color: #e4e4e4;
+}
+
+.proj-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  background-color: #F3F3F3;
+  padding: 16px;
+  border-radius: 28px;
+}
+
+.proj-card > img {
+  width: 40px;
+  height: 40px;
+}
+
+.proj-card-content {
+  display: contents;
+}
+
+.proj-card-content > p,
+.proj-card-footer {
+  grid-column: 1 / -1;
+}
+
+.proj-card-footer {
+  border-top: 1px solid #e4e4e4;
+  padding-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+@media (min-width: 40rem) {
+  .proj-card {
+    align-items: start;
+    column-gap: 32px;
+    padding: 20px;
+  }
+
+  .proj-card > img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .proj-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.proj-card a:hover {
+  text-decoration: underline;
 }
