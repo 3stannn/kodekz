@@ -32,15 +32,15 @@ function Hero() {
                 </div>
                 <p className="text font-normal normal text-justify mt-6">
                     A 3rd-year{" "}
-                    <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
+                    <span className="text normal small font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
                         Computer Science
                     </span>{" "}
                     student, aspiring software engineer. Building clean{" "}
-                    <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
+                    <span className="text normal small font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
                         &lt;/&gt; full-stack
                     </span>{" "}
                     platforms, bridging frontier{" "}
-                    <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">AI</span> models with
+                    <span className="text normal small font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">AI</span> models with
                     agentic tooling, and architecting normalized relational backends.
                 </p>
                 <div className="flex flex-row items-center justify-between gap-3 sm:gap-8 mt-6">

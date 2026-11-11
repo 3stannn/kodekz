@@ -608,6 +608,7 @@ a:focus-visible .link-arrow {
   padding: 4px 8px;
   background-color: #e4e4e4;
   color: #1d1d1d;
+  transform: translateY(-2px)
 }
 
 .service-card {
