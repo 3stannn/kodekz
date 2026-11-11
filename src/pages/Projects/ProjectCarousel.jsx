@@ -171,7 +171,7 @@ function ProjectCarousel() {
                                         {project.title}{" "}
                                         <span className="link-arrow" aria-hidden="true">&#8599;</span>
                                     </h2>
-                                    <span className="project-carousel__type text">{project.type}</span>
+                                    <span className="project-carousel__type text small">{project.type}</span>
                                 </div>
                             </a>
                             <p className="project-carousel__description text normal">{project.description}</p>

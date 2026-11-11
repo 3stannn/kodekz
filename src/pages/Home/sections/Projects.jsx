@@ -25,7 +25,7 @@ function Projects() {
                             </p>
                         </div>
                         <div>
-                            <p className="text text-right">Dev Tool</p>
+                            <p className="text small text-right">Dev Tool</p>
                         </div>
                     </div>
                 </a>
@@ -41,7 +41,7 @@ function Projects() {
                             </p>
                         </div>
                         <div>
-                            <p className="text text-right">Dev Tool</p>
+                            <p className="text small text-right">Dev Tool</p>
                         </div>
                     </div>
                 </a>
@@ -56,7 +56,7 @@ function Projects() {
                             </p>
                         </div>
                         <div>
-                            <p className="text text-right">Web App</p>
+                            <p className="text small text-right">Web App</p>
                         </div>
                     </div>
                 </a>
