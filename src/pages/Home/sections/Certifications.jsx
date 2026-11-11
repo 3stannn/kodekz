@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Certifications() {
     return (
-        <div className="max-w-3xl mx-auto px-6 mt-16">
+        <div className="max-w-3xl mx-auto px-6 mt-20">
             <div className="flex flex-row justify-between mb-4">
                 <h1 className="text">05 — certifications</h1>
                 <Link className="text tab" to="/certificates">
