@@ -123,7 +123,7 @@ function Hero() {
                                     </span>
                                 </p>
                             </div>
-                            <p className="text small normal">year experience</p>
+                            <p className="text normal">year experience</p>
                         </Link>
                         <Link className="tile w-full" to="/stacks">
                             <div className="flex flex-row justify-between">
@@ -134,7 +134,7 @@ function Hero() {
                                     </span>
                                 </p>
                             </div>
-                            <p className="text small normal">technologies</p>
+                            <p className="text normal">technologies</p>
                         </Link>
                         <Link className="tile right w-full" to="/projects">
                             <div className="flex flex-row justify-between">
@@ -145,7 +145,7 @@ function Hero() {
                                     </span>
                                 </p>
                             </div>
-                            <p className="text small normal">projects shipped</p>
+                            <p className="text normal">projects shipped</p>
                         </Link>
                     </div>
                 </div>
