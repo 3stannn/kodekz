@@ -247,7 +247,6 @@ function Navbar() {
                     id="mobile-menu"
                     className={`mobile-menu${isMobileOpen ? " mobile-menu--open" : ""}`}
                     aria-hidden={!isMobileOpen}
-                    data-lenis-prevent
                 >
                     <div>
                         <div className="mobile-menu__bar pl-4">

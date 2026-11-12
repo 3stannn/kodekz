@@ -18,7 +18,16 @@ body.mobile-menu-active {
   overflow: hidden;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
 .page-shell {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
   width: 100%;
   margin-left: 0;
   transition:

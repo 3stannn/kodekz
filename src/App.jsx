@@ -9,7 +9,9 @@ function App() {
       <Toaster position="top-center" theme="system" />
       <Navbar />
       <div className="page-shell">
-        <AppRoutes />
+        <div className="flex-1">
+          <AppRoutes />
+        </div>
         <Footer />
       </div>
     </>

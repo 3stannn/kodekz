@@ -14,7 +14,7 @@ function Projects() {
                     </Link>
                 </div>
                 <a target="_blank" href="https://usekip.vercel.app/">
-                    <div className="card flex flex-row justify-between">
+                    <div className="card flex flex-row justify-between gap-4">
                         <div>
                             <h1 className="text-heavy normal link-title">
                                 Kip - AI Coding Agent Orchestrator
@@ -25,12 +25,12 @@ function Projects() {
                             </p>
                         </div>
                         <div>
-                            <p className="text small text-right">Dev Tool</p>
+                            <p className="text small text-right whitespace-nowrap">Dev Tool</p>
                         </div>
                     </div>
                 </a>
                 <a target="_blank" href="https://insta-frame-three.vercel.app/">
-                    <div className="card bottom flex flex-row justify-between">
+                    <div className="card bottom flex flex-row justify-between gap-4">
                         <div>
                             <h1 className="text-heavy normal link-title">
                                 InstaFrame — Webpage Studio & Responsive Viewports
@@ -41,12 +41,12 @@ function Projects() {
                             </p>
                         </div>
                         <div>
-                            <p className="text small text-right">Dev Tool</p>
+                            <p className="text small text-right whitespace-nowrap">Dev Tool</p>
                         </div>
                     </div>
                 </a>
                 <a target="_blank" href="https://schedy-sepia.vercel.app/">
-                    <div className="card bottom flex flex-row justify-between">
+                    <div className="card bottom flex flex-row justify-between gap-4">
                         <div>
                             <h1 className="text-heavy normal link-title">
                                 Schedy — Shared Workspace Calendar
@@ -56,7 +56,7 @@ function Projects() {
                             </p>
                         </div>
                         <div>
-                            <p className="text small text-right">Web App</p>
+                            <p className="text small text-right whitespace-nowrap">Web App</p>
                         </div>
                     </div>
                 </a>

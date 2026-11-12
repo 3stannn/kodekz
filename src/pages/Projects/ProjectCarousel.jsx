@@ -112,7 +112,6 @@ function ProjectCarousel() {
         if (returnTween.current) return;
 
         const viewport = event.currentTarget;
-        // Lenis intercepts native scrollend events at the window.
         window.clearTimeout(settleTimer.current);
         settleTimer.current = window.setTimeout(() => settle(viewport), 100);
     }
@@ -146,7 +145,6 @@ function ProjectCarousel() {
                 onWheel={(event) => {
                     if (event.deltaX || event.shiftKey) interruptReturn();
                 }}
-                data-lenis-prevent-horizontal
             >
                 {projects.map((project, index) => {
                     const isActive = index === activeIndex;
