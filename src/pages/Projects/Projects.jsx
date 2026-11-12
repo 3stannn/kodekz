@@ -4,7 +4,7 @@ import ProjectCarousel from "./ProjectCarousel";
 function Projects() {
     return (
         <div className="mt-12">
-            <div className="mx-auto mb-10 grid max-w-3xl grid-cols-[minmax(0,1fr)_auto] items-start gap-x-6 gap-y-4 px-6">
+            <div className="mx-auto mb-10 grid max-w-2xl grid-cols-[minmax(0,1fr)_auto] items-start gap-x-6 gap-y-4 px-6">
                 <div>
                     <p className="text mb-2">02 — projects</p>
                     <h1 className="text-2xl font-medium tracking-tight">Projects </h1>

@@ -13,7 +13,7 @@ function Services() {
     };
 
     return (
-        <div className="mx-auto mt-12 max-w-3xl px-6">
+        <div className="mx-auto mt-12 max-w-2xl px-6">
             <div className="mb-10 flex items-start justify-between gap-6">
                 <div>
                     <h1 className="text-2xl font-medium tracking-tight">

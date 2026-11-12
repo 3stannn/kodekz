@@ -1,6 +1,6 @@
 function Education() {
     return (
-        <div className="max-w-3xl mx-auto px-6 mt-20">
+        <div className="max-w-2xl mx-auto px-6 mt-20">
             <div className="flex flex-row justify-between mb-4">
                 <h1 className="text">04 — education</h1>
             </div>

@@ -10,7 +10,7 @@ const kipColors = ["#1e3fd8", "#f6f8ff", "#a5d8ff", "#38bdf8"];
 function Hero() {
     return (
         <div className="mt-10 md:mt-12">
-            <div className="max-w-3xl mx-auto px-6">
+            <div className="max-w-2xl mx-auto px-6">
                 <div className="flex flex-row gap-4 items-center">
                     <img
                         className="w-20 h-20 rounded-full"

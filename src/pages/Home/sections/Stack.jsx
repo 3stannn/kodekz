@@ -15,7 +15,7 @@ const technologies = [
 
 function Stack() {
     return (
-        <div className="max-w-3xl mx-auto px-6 mt-8">
+        <div className="max-w-2xl mx-auto px-6 mt-8">
             <div className="flex flex-row justify-between mb-4">
                 <h1 className="text">03 — tech stack</h1>
                 <Link className="text tab" to="/stacks">

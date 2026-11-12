@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Certificates() {
     return (
-        <div className="mx-auto mt-12 max-w-3xl px-6">
+        <div className="mx-auto mt-12 max-w-2xl px-6">
             <div className="mb-10 flex items-start justify-between gap-6">
                 <div>
                     <p className="text mb-2">05 — certifications</p>
