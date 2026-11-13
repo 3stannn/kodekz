@@ -436,7 +436,7 @@ a:focus-visible .link-arrow {
 
 .outer-card {
   background-color: #F3F3F3;
-  padding: 8px;
+  padding: 4px;
   min-height: 150px;
   border-radius: 16px;
 }
@@ -448,7 +448,7 @@ a:focus-visible .link-arrow {
 
 .inner-card {
   border: 1px solid #e4e4e4;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .github-calendar {
