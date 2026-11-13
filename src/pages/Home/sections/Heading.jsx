@@ -26,21 +26,21 @@ function Hero() {
                             </svg>
                         </div>
                         <div>
-                            <h1 className="text font-normal role">&#9657; Web Developer</h1>
+                            <h1 className="text role">&#9657; Web Developer</h1>
                         </div>
                     </div>
                 </div>
-                <p className="text font-normal normal text-justify mt-6">
+                <p className="normal text-justify mt-6">
                     A 3rd-year{" "}
-                    <span className="text normal small font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
+                    <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
                         Computer Science
                     </span>{" "}
                     student, aspiring software engineer. Building clean{" "}
-                    <span className="text normal small font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
+                    <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
                         &lt;/&gt; full-stack
                     </span>{" "}
                     platforms, bridging frontier{" "}
-                    <span className="text normal small font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">AI</span> models with
+                    <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">AI</span> models with
                     agentic tooling, and architecting normalized relational backends.
                 </p>
                 <div className="flex flex-row items-center justify-between gap-3 sm:gap-8 mt-6">
@@ -116,7 +116,7 @@ function Hero() {
                     <div className="flex w-full justify-between">
                         <Link className="tile left w-full" to="/experiences">
                             <div className="flex flex-row justify-between">
-                                <h1 className="text-xl">&lt; 1</h1>
+                                <span className="text-xl">&lt; 1</span>
                                 <p className="text link">
                                     <span className="link-arrow" aria-hidden="true">
                                         &#8599;
@@ -127,7 +127,7 @@ function Hero() {
                         </Link>
                         <Link className="tile w-full" to="/stacks">
                             <div className="flex flex-row justify-between">
-                                <h1 className="text-xl">10+</h1>
+                                <span className="text-xl">10+</span>
                                 <p className="text link">
                                     <span className="link-arrow" aria-hidden="true">
                                         &#8599;
@@ -138,7 +138,7 @@ function Hero() {
                         </Link>
                         <Link className="tile right w-full" to="/projects">
                             <div className="flex flex-row justify-between">
-                                <h1 className="text-xl">3</h1>
+                                <span className="text-xl">3</span>
                                 <p className="text link">
                                     <span className="link-arrow" aria-hidden="true">
                                         &#8599;
