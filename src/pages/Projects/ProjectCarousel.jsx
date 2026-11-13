@@ -2,7 +2,6 @@ import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
 import kipScreen from "@/assets/project-screens/kip.png";
 import instaFrameScreen from "@/assets/project-screens/instaframe.png";
-import schedyScreen from "@/assets/project-screens/schedy.png";
 import "./ProjectCarousel.css";
 
 const projects = [
@@ -23,15 +22,6 @@ const projects = [
         type: "Dev Tool",
         href: "https://insta-frame-three.vercel.app/",
         screen: instaFrameScreen,
-    },
-    {
-        name: "Schedy",
-        title: "Schedy — Shared Workspace and Calendar",
-        description:
-            "Designed and engineered an intuitive shared workspace that pairs event scheduling with a central bulletin board. Built with responsive layouts and real-time state updates to keep teams aligned effortlessly.",
-        type: "Web App",
-        href: "https://schedy-sepia.vercel.app/",
-        screen: schedyScreen,
     },
 ];
 

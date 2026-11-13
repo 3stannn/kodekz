@@ -30,7 +30,7 @@ function Hero() {
                         </div>
                     </div>
                 </div>
-                <p className="normal text-justify mt-6">
+                <p className="normal text-[#737373] text-justify mt-6">
                     A 3rd-year{" "}
                     <span className="text normal font-medium chip inline-flex items-center gap-2 align-middle whitespace-nowrap">
                         Computer Science

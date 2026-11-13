@@ -25,7 +25,7 @@ function Projects() {
                     target="_blank"
                     href="https://marketplace.visualstudio.com/items?itemName=kodekz01.simply-slate-theme"
                 >
-                    <div className="card flex flex-col justify-between gap-4">
+                    <div className="card thin flex flex-col justify-between gap-4">
                         <div className="flex justify-between gap-3">
                             <div>
                                 <h2 className="text-heavy link-title">Simply Slate Theme</h2>
@@ -37,15 +37,43 @@ function Projects() {
                         </div>
                         <div>
                             <p className="text normal">
-                                A minimalist VS Code theme built for developers seeking a refined
-                                aesthetic. Combines soft slate palettes with intentional contrast
-                                to keep the editor clean, modern, and easy on the eyes.
+                                A minimalist VS Code theme built for developers seeking a
+                                refined aesthetic. Combines soft slate palettes with intentional
+                                contrast to keep the editor clean, modern, and easy on the eyes.
                             </p>
                         </div>
                     </div>
                 </a>
-                <a target="_blank" href="https://expense-tracker-fawn-psi-24.vercel.app/">
-                    <div className="card bottom flex flex-col justify-between gap-4">
+                <a
+                    target="_blank"
+                    href="https://schedy-sepia.vercel.app/"
+                >
+                    <div className="card bottom thin flex flex-col justify-between gap-4">
+                        <div className="flex justify-between gap-3">
+                            <div>
+                                <h2 className="text-heavy link-title">
+                                    Schedy — Shared Workspace & Calendar
+                                </h2>
+                            </div>
+                            <div className="shrink-0">
+                                <p className="text small text-right">Wep App</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p className="text normal">
+                                Designed and engineered an intuitive shared workspace that pairs
+                                event scheduling with a central bulletin board. Built with
+                                responsive layouts and real-time state updates to keep teams
+                                aligned effortlessly.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    href="https://expense-tracker-fawn-psi-24.vercel.app/"
+                >
+                    <div className="card bottom thin bottom flex flex-col justify-between gap-4">
                         <div className="flex justify-between gap-3">
                             <div>
                                 <h2 className="text-heavy link-title">Expense Tracker</h2>
@@ -63,10 +91,12 @@ function Projects() {
                     </div>
                 </a>
                 <a target="_blank" href="https://github.com/3stannn/Tyto">
-                    <div className="card bottom flex flex-col justify-between gap-4">
+                    <div className="card thin bottom flex flex-col justify-between gap-4">
                         <div className="flex justify-between gap-3">
                             <div>
-                                <h2 className="text-heavy link-title">Tyto — Payment Ledger System</h2>
+                                <h2 className="text-heavy link-title">
+                                    Tyto — Payment Ledger System
+                                </h2>
                             </div>
                             <div className="shrink-0">
                                 <p className="text small text-right">Application</p>
@@ -76,8 +106,8 @@ function Projects() {
                             <p className="text normal">
                                 Architected a reliable ledger management system to handle
                                 transaction entries, compute real-time balances, and maintain
-                                financial records. Emphasized clean UI controls and rigorous data
-                                integrity.
+                                financial records. Emphasized clean UI controls and rigorous
+                                data integrity.
                             </p>
                         </div>
                     </div>
