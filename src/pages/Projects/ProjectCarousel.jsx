@@ -11,7 +11,7 @@ const projects = [
         title: "Tally - Desktop CRM for Developers",
         description:
             "Tally is a local-only desktop CRM for solo developers. It brings client projects, meetings, deadlines, payments, and GitHub activity into one Windows app that stores your data on your machine.",
-        type: "AI Dev Tool",
+        type: "Software",
         href: "https://usetally-psi.vercel.app/",
         screen: tallyScreen,
     },
