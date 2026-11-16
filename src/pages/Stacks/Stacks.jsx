@@ -8,10 +8,12 @@ const stackGroups = [
             "CSS",
             "JavaScript",
             "React",
+            "Vite",
             "Tailwind CSS",
             "Bootstrap",
             "TypeScript",
             "Next.js",
+            "GSAP",
         ],
     },
     {

@@ -2,9 +2,19 @@ import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
 import kipScreen from "@/assets/project-screens/kip.png";
 import instaFrameScreen from "@/assets/project-screens/instaframe.png";
+import tallyScreen from "@/assets/project-screens/tally.png";
 import "./ProjectCarousel.css";
 
 const projects = [
+    {
+        name: "Tally",
+        title: "Tally - Desktop CRM for Developers",
+        description:
+            "Tally is a local-only desktop CRM for solo developers. It brings client projects, meetings, deadlines, payments, and GitHub activity into one Windows app that stores your data on your machine.",
+        type: "AI Dev Tool",
+        href: "https://usetally-psi.vercel.app/",
+        screen: tallyScreen,
+    },
     {
         name: "Kip",
         title: "Kip - AI Coding Agent Orchestration",
