@@ -161,7 +161,7 @@ function ProjectCarousel() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <div className="project-carousel__frame">
+                                <div className="project-carousel__frame shadow-md">
                                     <img src={project.screen} alt="" width="1920" height="1080" />
                                 </div>
                                 <div className="project-carousel__caption">
