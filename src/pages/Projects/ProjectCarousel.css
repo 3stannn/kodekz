@@ -75,12 +75,6 @@
   text-underline-offset: 0.2em;
 }
 
-.project-carousel__type {
-  flex-shrink: 0;
-  font-size: 0.8125rem;
-  color: #626262;
-}
-
 .project-carousel__description {
   max-width: 66ch;
   margin-top: 0.35rem;

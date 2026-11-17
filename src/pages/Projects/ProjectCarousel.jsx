@@ -11,7 +11,6 @@ const projects = [
         title: "Tally - Desktop CRM for Developers",
         description:
             "Tally is a local-only desktop CRM for solo developers. It brings client projects, meetings, deadlines, payments, and GitHub activity into one Windows app that stores your data on your machine.",
-        type: "Software",
         href: "https://usetally-psi.vercel.app/",
         screen: tallyScreen,
     },
@@ -20,7 +19,6 @@ const projects = [
         title: "Kip - AI Coding Agent Orchestration",
         description:
             "Kip is an easy-setup AI orchestration utility that prevents low-quality AI code generation, optimizing workflows for Codex, Claude Code, and Antigravity.",
-        type: "AI Dev Tool",
         href: "https://usekip.vercel.app/",
         screen: kipScreen,
     },
@@ -29,7 +27,6 @@ const projects = [
         title: "InstaFrame — Webpage Studio & Responsive Viewports",
         description:
             "Eliminates the friction of manual browser resizing and third-party mockup tools. Provides live, multi-device viewport previews and converts active web tabs into studio-grade mockups in a single click.",
-        type: "Dev Tool",
         href: "https://insta-frame-three.vercel.app/",
         screen: instaFrameScreen,
     },
@@ -169,7 +166,6 @@ function ProjectCarousel() {
                                         {project.title}{" "}
                                         <span className="link-arrow" aria-hidden="true">&#8599;</span>
                                     </h2>
-                                    <span className="project-carousel__type text small">{project.type}</span>
                                 </div>
                             </a>
                             <p className="project-carousel__description text normal">{project.description}</p>
